@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:gasly/services/logging_helper.dart';
 
 class ResponseLoggingInterceptor extends Interceptor {
   @override
