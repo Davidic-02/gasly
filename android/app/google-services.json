@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "208209054222",
+    "project_id": "gasly-2b7d1",
+    "storage_bucket": "gasly-2b7d1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208209054222:android:07abed18bf24b1b6598a5f",
+        "android_client_info": {
+          "package_name": "com.example.gasly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsg5rFEIMPtKUHG8DrkpDfXuHgCSSWq5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

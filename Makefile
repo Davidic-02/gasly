@@ -1,11 +1,10 @@
-# Flutter development commands
 .PHONY: runner clean get analyze test build watch
 
 runner:
-	flutter pub run build_runner build --delete-conflicting-outputs
+	dart run build_runner build --delete-conflicting-outputs
 
 watch:
-	flutter pub run build_runner watch
+	dart run build_runner watch
 
 clean:
 	flutter clean
