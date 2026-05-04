@@ -2,10 +2,10 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:gasly/bloc/auth/auth_bloc.dart';
 import 'package:gasly/firebase_options.dart';
 import 'package:gasly/services/services_locator.dart';
 import 'package:gasly/services/theme_services.dart';
-import 'package:toastification/toastification.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,4296 +9,1373 @@ part of 'auth_bloc.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
-
 /// @nodoc
 mixin _$AuthEvent {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) => throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) => throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) => throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) => throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+
+
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AuthEvent);
+}
+
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'AuthEvent()';
+}
+
+
 }
 
 /// @nodoc
-abstract class $AuthEventCopyWith<$Res> {
-  factory $AuthEventCopyWith(AuthEvent value, $Res Function(AuthEvent) then) =
-      _$AuthEventCopyWithImpl<$Res, AuthEvent>;
+class $AuthEventCopyWith<$Res>  {
+$AuthEventCopyWith(AuthEvent _, $Res Function(AuthEvent) __);
 }
 
-/// @nodoc
-class _$AuthEventCopyWithImpl<$Res, $Val extends AuthEvent>
-    implements $AuthEventCopyWith<$Res> {
-  _$AuthEventCopyWithImpl(this._value, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+/// Adds pattern-matching-related methods to [AuthEvent].
+extension AuthEventPatterns on AuthEvent {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _AuthEvent value)?  $default,{TResult Function( _EmailChanged value)?  emailChanged,TResult Function( _PasswordChanged value)?  passwordChanged,TResult Function( _LoginPressed value)?  loginPressed,TResult Function( _LoginSuccessful value)?  loginSuccessful,TResult Function( _LoginFailed value)?  loginFailed,TResult Function( _FullNameChanged value)?  fullNameChanged,TResult Function( _PhoneChanged value)?  phoneChanged,TResult Function( _RegisterPressed value)?  registerPressed,TResult Function( _RegisterSuccessful value)?  registerSuccessful,TResult Function( _RegisterFailed value)?  registerFailed,TResult Function( _ForgotPasswordEmailChanged value)?  forgotPasswordEmailChanged,TResult Function( _ForgotPasswordPressed value)?  forgotPasswordPressed,TResult Function( _ForgotPasswordSuccessful value)?  forgotPasswordSuccessful,TResult Function( _ForgotPasswordFailed value)?  forgotPasswordFailed,TResult Function( _ErrorMessageCleared value)?  errorMessageCleared,TResult Function( _LogoutPressed value)?  logoutPressed,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _AuthEvent() when $default != null:
+return $default(_that);case _EmailChanged() when emailChanged != null:
+return emailChanged(_that);case _PasswordChanged() when passwordChanged != null:
+return passwordChanged(_that);case _LoginPressed() when loginPressed != null:
+return loginPressed(_that);case _LoginSuccessful() when loginSuccessful != null:
+return loginSuccessful(_that);case _LoginFailed() when loginFailed != null:
+return loginFailed(_that);case _FullNameChanged() when fullNameChanged != null:
+return fullNameChanged(_that);case _PhoneChanged() when phoneChanged != null:
+return phoneChanged(_that);case _RegisterPressed() when registerPressed != null:
+return registerPressed(_that);case _RegisterSuccessful() when registerSuccessful != null:
+return registerSuccessful(_that);case _RegisterFailed() when registerFailed != null:
+return registerFailed(_that);case _ForgotPasswordEmailChanged() when forgotPasswordEmailChanged != null:
+return forgotPasswordEmailChanged(_that);case _ForgotPasswordPressed() when forgotPasswordPressed != null:
+return forgotPasswordPressed(_that);case _ForgotPasswordSuccessful() when forgotPasswordSuccessful != null:
+return forgotPasswordSuccessful(_that);case _ForgotPasswordFailed() when forgotPasswordFailed != null:
+return forgotPasswordFailed(_that);case _ErrorMessageCleared() when errorMessageCleared != null:
+return errorMessageCleared(_that);case _LogoutPressed() when logoutPressed != null:
+return logoutPressed(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _AuthEvent value)  $default,{required TResult Function( _EmailChanged value)  emailChanged,required TResult Function( _PasswordChanged value)  passwordChanged,required TResult Function( _LoginPressed value)  loginPressed,required TResult Function( _LoginSuccessful value)  loginSuccessful,required TResult Function( _LoginFailed value)  loginFailed,required TResult Function( _FullNameChanged value)  fullNameChanged,required TResult Function( _PhoneChanged value)  phoneChanged,required TResult Function( _RegisterPressed value)  registerPressed,required TResult Function( _RegisterSuccessful value)  registerSuccessful,required TResult Function( _RegisterFailed value)  registerFailed,required TResult Function( _ForgotPasswordEmailChanged value)  forgotPasswordEmailChanged,required TResult Function( _ForgotPasswordPressed value)  forgotPasswordPressed,required TResult Function( _ForgotPasswordSuccessful value)  forgotPasswordSuccessful,required TResult Function( _ForgotPasswordFailed value)  forgotPasswordFailed,required TResult Function( _ErrorMessageCleared value)  errorMessageCleared,required TResult Function( _LogoutPressed value)  logoutPressed,}){
+final _that = this;
+switch (_that) {
+case _AuthEvent():
+return $default(_that);case _EmailChanged():
+return emailChanged(_that);case _PasswordChanged():
+return passwordChanged(_that);case _LoginPressed():
+return loginPressed(_that);case _LoginSuccessful():
+return loginSuccessful(_that);case _LoginFailed():
+return loginFailed(_that);case _FullNameChanged():
+return fullNameChanged(_that);case _PhoneChanged():
+return phoneChanged(_that);case _RegisterPressed():
+return registerPressed(_that);case _RegisterSuccessful():
+return registerSuccessful(_that);case _RegisterFailed():
+return registerFailed(_that);case _ForgotPasswordEmailChanged():
+return forgotPasswordEmailChanged(_that);case _ForgotPasswordPressed():
+return forgotPasswordPressed(_that);case _ForgotPasswordSuccessful():
+return forgotPasswordSuccessful(_that);case _ForgotPasswordFailed():
+return forgotPasswordFailed(_that);case _ErrorMessageCleared():
+return errorMessageCleared(_that);case _LogoutPressed():
+return logoutPressed(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _AuthEvent value)?  $default,{TResult? Function( _EmailChanged value)?  emailChanged,TResult? Function( _PasswordChanged value)?  passwordChanged,TResult? Function( _LoginPressed value)?  loginPressed,TResult? Function( _LoginSuccessful value)?  loginSuccessful,TResult? Function( _LoginFailed value)?  loginFailed,TResult? Function( _FullNameChanged value)?  fullNameChanged,TResult? Function( _PhoneChanged value)?  phoneChanged,TResult? Function( _RegisterPressed value)?  registerPressed,TResult? Function( _RegisterSuccessful value)?  registerSuccessful,TResult? Function( _RegisterFailed value)?  registerFailed,TResult? Function( _ForgotPasswordEmailChanged value)?  forgotPasswordEmailChanged,TResult? Function( _ForgotPasswordPressed value)?  forgotPasswordPressed,TResult? Function( _ForgotPasswordSuccessful value)?  forgotPasswordSuccessful,TResult? Function( _ForgotPasswordFailed value)?  forgotPasswordFailed,TResult? Function( _ErrorMessageCleared value)?  errorMessageCleared,TResult? Function( _LogoutPressed value)?  logoutPressed,}){
+final _that = this;
+switch (_that) {
+case _AuthEvent() when $default != null:
+return $default(_that);case _EmailChanged() when emailChanged != null:
+return emailChanged(_that);case _PasswordChanged() when passwordChanged != null:
+return passwordChanged(_that);case _LoginPressed() when loginPressed != null:
+return loginPressed(_that);case _LoginSuccessful() when loginSuccessful != null:
+return loginSuccessful(_that);case _LoginFailed() when loginFailed != null:
+return loginFailed(_that);case _FullNameChanged() when fullNameChanged != null:
+return fullNameChanged(_that);case _PhoneChanged() when phoneChanged != null:
+return phoneChanged(_that);case _RegisterPressed() when registerPressed != null:
+return registerPressed(_that);case _RegisterSuccessful() when registerSuccessful != null:
+return registerSuccessful(_that);case _RegisterFailed() when registerFailed != null:
+return registerFailed(_that);case _ForgotPasswordEmailChanged() when forgotPasswordEmailChanged != null:
+return forgotPasswordEmailChanged(_that);case _ForgotPasswordPressed() when forgotPasswordPressed != null:
+return forgotPasswordPressed(_that);case _ForgotPasswordSuccessful() when forgotPasswordSuccessful != null:
+return forgotPasswordSuccessful(_that);case _ForgotPasswordFailed() when forgotPasswordFailed != null:
+return forgotPasswordFailed(_that);case _ErrorMessageCleared() when errorMessageCleared != null:
+return errorMessageCleared(_that);case _LogoutPressed() when logoutPressed != null:
+return logoutPressed(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function()?  $default,{TResult Function( String email)?  emailChanged,TResult Function( String password)?  passwordChanged,TResult Function()?  loginPressed,TResult Function()?  loginSuccessful,TResult Function( String? message)?  loginFailed,TResult Function( String fullName)?  fullNameChanged,TResult Function( String phone)?  phoneChanged,TResult Function()?  registerPressed,TResult Function()?  registerSuccessful,TResult Function( String? message)?  registerFailed,TResult Function( String email)?  forgotPasswordEmailChanged,TResult Function()?  forgotPasswordPressed,TResult Function()?  forgotPasswordSuccessful,TResult Function( String? message)?  forgotPasswordFailed,TResult Function()?  errorMessageCleared,TResult Function()?  logoutPressed,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _AuthEvent() when $default != null:
+return $default();case _EmailChanged() when emailChanged != null:
+return emailChanged(_that.email);case _PasswordChanged() when passwordChanged != null:
+return passwordChanged(_that.password);case _LoginPressed() when loginPressed != null:
+return loginPressed();case _LoginSuccessful() when loginSuccessful != null:
+return loginSuccessful();case _LoginFailed() when loginFailed != null:
+return loginFailed(_that.message);case _FullNameChanged() when fullNameChanged != null:
+return fullNameChanged(_that.fullName);case _PhoneChanged() when phoneChanged != null:
+return phoneChanged(_that.phone);case _RegisterPressed() when registerPressed != null:
+return registerPressed();case _RegisterSuccessful() when registerSuccessful != null:
+return registerSuccessful();case _RegisterFailed() when registerFailed != null:
+return registerFailed(_that.message);case _ForgotPasswordEmailChanged() when forgotPasswordEmailChanged != null:
+return forgotPasswordEmailChanged(_that.email);case _ForgotPasswordPressed() when forgotPasswordPressed != null:
+return forgotPasswordPressed();case _ForgotPasswordSuccessful() when forgotPasswordSuccessful != null:
+return forgotPasswordSuccessful();case _ForgotPasswordFailed() when forgotPasswordFailed != null:
+return forgotPasswordFailed(_that.message);case _ErrorMessageCleared() when errorMessageCleared != null:
+return errorMessageCleared();case _LogoutPressed() when logoutPressed != null:
+return logoutPressed();case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function()  $default,{required TResult Function( String email)  emailChanged,required TResult Function( String password)  passwordChanged,required TResult Function()  loginPressed,required TResult Function()  loginSuccessful,required TResult Function( String? message)  loginFailed,required TResult Function( String fullName)  fullNameChanged,required TResult Function( String phone)  phoneChanged,required TResult Function()  registerPressed,required TResult Function()  registerSuccessful,required TResult Function( String? message)  registerFailed,required TResult Function( String email)  forgotPasswordEmailChanged,required TResult Function()  forgotPasswordPressed,required TResult Function()  forgotPasswordSuccessful,required TResult Function( String? message)  forgotPasswordFailed,required TResult Function()  errorMessageCleared,required TResult Function()  logoutPressed,}) {final _that = this;
+switch (_that) {
+case _AuthEvent():
+return $default();case _EmailChanged():
+return emailChanged(_that.email);case _PasswordChanged():
+return passwordChanged(_that.password);case _LoginPressed():
+return loginPressed();case _LoginSuccessful():
+return loginSuccessful();case _LoginFailed():
+return loginFailed(_that.message);case _FullNameChanged():
+return fullNameChanged(_that.fullName);case _PhoneChanged():
+return phoneChanged(_that.phone);case _RegisterPressed():
+return registerPressed();case _RegisterSuccessful():
+return registerSuccessful();case _RegisterFailed():
+return registerFailed(_that.message);case _ForgotPasswordEmailChanged():
+return forgotPasswordEmailChanged(_that.email);case _ForgotPasswordPressed():
+return forgotPasswordPressed();case _ForgotPasswordSuccessful():
+return forgotPasswordSuccessful();case _ForgotPasswordFailed():
+return forgotPasswordFailed(_that.message);case _ErrorMessageCleared():
+return errorMessageCleared();case _LogoutPressed():
+return logoutPressed();case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function()?  $default,{TResult? Function( String email)?  emailChanged,TResult? Function( String password)?  passwordChanged,TResult? Function()?  loginPressed,TResult? Function()?  loginSuccessful,TResult? Function( String? message)?  loginFailed,TResult? Function( String fullName)?  fullNameChanged,TResult? Function( String phone)?  phoneChanged,TResult? Function()?  registerPressed,TResult? Function()?  registerSuccessful,TResult? Function( String? message)?  registerFailed,TResult? Function( String email)?  forgotPasswordEmailChanged,TResult? Function()?  forgotPasswordPressed,TResult? Function()?  forgotPasswordSuccessful,TResult? Function( String? message)?  forgotPasswordFailed,TResult? Function()?  errorMessageCleared,TResult? Function()?  logoutPressed,}) {final _that = this;
+switch (_that) {
+case _AuthEvent() when $default != null:
+return $default();case _EmailChanged() when emailChanged != null:
+return emailChanged(_that.email);case _PasswordChanged() when passwordChanged != null:
+return passwordChanged(_that.password);case _LoginPressed() when loginPressed != null:
+return loginPressed();case _LoginSuccessful() when loginSuccessful != null:
+return loginSuccessful();case _LoginFailed() when loginFailed != null:
+return loginFailed(_that.message);case _FullNameChanged() when fullNameChanged != null:
+return fullNameChanged(_that.fullName);case _PhoneChanged() when phoneChanged != null:
+return phoneChanged(_that.phone);case _RegisterPressed() when registerPressed != null:
+return registerPressed();case _RegisterSuccessful() when registerSuccessful != null:
+return registerSuccessful();case _RegisterFailed() when registerFailed != null:
+return registerFailed(_that.message);case _ForgotPasswordEmailChanged() when forgotPasswordEmailChanged != null:
+return forgotPasswordEmailChanged(_that.email);case _ForgotPasswordPressed() when forgotPasswordPressed != null:
+return forgotPasswordPressed();case _ForgotPasswordSuccessful() when forgotPasswordSuccessful != null:
+return forgotPasswordSuccessful();case _ForgotPasswordFailed() when forgotPasswordFailed != null:
+return forgotPasswordFailed(_that.message);case _ErrorMessageCleared() when errorMessageCleared != null:
+return errorMessageCleared();case _LogoutPressed() when logoutPressed != null:
+return logoutPressed();case _:
+  return null;
+
+}
 }
 
-/// @nodoc
-abstract class _$$AuthEventImplCopyWith<$Res> {
-  factory _$$AuthEventImplCopyWith(
-    _$AuthEventImpl value,
-    $Res Function(_$AuthEventImpl) then,
-  ) = __$$AuthEventImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$AuthEventImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$AuthEventImpl>
-    implements _$$AuthEventImplCopyWith<$Res> {
-  __$$AuthEventImplCopyWithImpl(
-    _$AuthEventImpl _value,
-    $Res Function(_$AuthEventImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-
-class _$AuthEventImpl implements _AuthEvent {
-  const _$AuthEventImpl();
-
-  @override
-  String toString() {
-    return 'AuthEvent()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$AuthEventImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return $default();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return $default?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if ($default != null) {
-      return $default();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return $default(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return $default?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if ($default != null) {
-      return $default(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _AuthEvent implements AuthEvent {
-  const factory _AuthEvent() = _$AuthEventImpl;
-}
-
-/// @nodoc
-abstract class _$$EmailChangedImplCopyWith<$Res> {
-  factory _$$EmailChangedImplCopyWith(
-    _$EmailChangedImpl value,
-    $Res Function(_$EmailChangedImpl) then,
-  ) = __$$EmailChangedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String email});
-}
-
-/// @nodoc
-class __$$EmailChangedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$EmailChangedImpl>
-    implements _$$EmailChangedImplCopyWith<$Res> {
-  __$$EmailChangedImplCopyWithImpl(
-    _$EmailChangedImpl _value,
-    $Res Function(_$EmailChangedImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? email = null}) {
-    return _then(
-      _$EmailChangedImpl(
-        null == email
-            ? _value.email
-            : email // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
-  }
 }
 
 /// @nodoc
 
-class _$EmailChangedImpl implements _EmailChanged {
-  const _$EmailChangedImpl(this.email);
 
-  @override
-  final String email;
+class _AuthEvent implements AuthEvent {
+  const _AuthEvent();
+  
 
-  @override
-  String toString() {
-    return 'AuthEvent.emailChanged(email: $email)';
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$EmailChangedImpl &&
-            (identical(other.email, email) || other.email == email));
-  }
 
-  @override
-  int get hashCode => Object.hash(runtimeType, email);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$EmailChangedImplCopyWith<_$EmailChangedImpl> get copyWith =>
-      __$$EmailChangedImplCopyWithImpl<_$EmailChangedImpl>(this, _$identity);
 
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return emailChanged(email);
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return emailChanged?.call(email);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (emailChanged != null) {
-      return emailChanged(email);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return emailChanged(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return emailChanged?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (emailChanged != null) {
-      return emailChanged(this);
-    }
-    return orElse();
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AuthEvent);
 }
 
-abstract class _EmailChanged implements AuthEvent {
-  const factory _EmailChanged(final String email) = _$EmailChangedImpl;
 
-  String get email;
+@override
+int get hashCode => runtimeType.hashCode;
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$EmailChangedImplCopyWith<_$EmailChangedImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'AuthEvent()';
+}
+
+
+}
+
+
+
+
+/// @nodoc
+
+
+class _EmailChanged implements AuthEvent {
+  const _EmailChanged(this.email);
+  
+
+ final  String email;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$EmailChangedCopyWith<_EmailChanged> get copyWith => __$EmailChangedCopyWithImpl<_EmailChanged>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _EmailChanged&&(identical(other.email, email) || other.email == email));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,email);
+
+@override
+String toString() {
+  return 'AuthEvent.emailChanged(email: $email)';
+}
+
+
 }
 
 /// @nodoc
-abstract class _$$PasswordChangedImplCopyWith<$Res> {
-  factory _$$PasswordChangedImplCopyWith(
-    _$PasswordChangedImpl value,
-    $Res Function(_$PasswordChangedImpl) then,
-  ) = __$$PasswordChangedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String password});
+abstract mixin class _$EmailChangedCopyWith<$Res> implements $AuthEventCopyWith<$Res> {
+  factory _$EmailChangedCopyWith(_EmailChanged value, $Res Function(_EmailChanged) _then) = __$EmailChangedCopyWithImpl;
+@useResult
+$Res call({
+ String email
+});
+
+
+
+
+}
+/// @nodoc
+class __$EmailChangedCopyWithImpl<$Res>
+    implements _$EmailChangedCopyWith<$Res> {
+  __$EmailChangedCopyWithImpl(this._self, this._then);
+
+  final _EmailChanged _self;
+  final $Res Function(_EmailChanged) _then;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? email = null,}) {
+  return _then(_EmailChanged(
+null == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-class __$$PasswordChangedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$PasswordChangedImpl>
-    implements _$$PasswordChangedImplCopyWith<$Res> {
-  __$$PasswordChangedImplCopyWithImpl(
-    _$PasswordChangedImpl _value,
-    $Res Function(_$PasswordChangedImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? password = null}) {
-    return _then(
-      _$PasswordChangedImpl(
-        null == password
-            ? _value.password
-            : password // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
-  }
 }
 
 /// @nodoc
 
-class _$PasswordChangedImpl implements _PasswordChanged {
-  const _$PasswordChangedImpl(this.password);
 
-  @override
-  final String password;
+class _PasswordChanged implements AuthEvent {
+  const _PasswordChanged(this.password);
+  
 
-  @override
-  String toString() {
-    return 'AuthEvent.passwordChanged(password: $password)';
-  }
+ final  String password;
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$PasswordChangedImpl &&
-            (identical(other.password, password) ||
-                other.password == password));
-  }
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$PasswordChangedCopyWith<_PasswordChanged> get copyWith => __$PasswordChangedCopyWithImpl<_PasswordChanged>(this, _$identity);
 
-  @override
-  int get hashCode => Object.hash(runtimeType, password);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$PasswordChangedImplCopyWith<_$PasswordChangedImpl> get copyWith =>
-      __$$PasswordChangedImplCopyWithImpl<_$PasswordChangedImpl>(
-        this,
-        _$identity,
-      );
 
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return passwordChanged(password);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return passwordChanged?.call(password);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (passwordChanged != null) {
-      return passwordChanged(password);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return passwordChanged(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return passwordChanged?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (passwordChanged != null) {
-      return passwordChanged(this);
-    }
-    return orElse();
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _PasswordChanged&&(identical(other.password, password) || other.password == password));
 }
 
-abstract class _PasswordChanged implements AuthEvent {
-  const factory _PasswordChanged(final String password) = _$PasswordChangedImpl;
 
-  String get password;
+@override
+int get hashCode => Object.hash(runtimeType,password);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$PasswordChangedImplCopyWith<_$PasswordChangedImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'AuthEvent.passwordChanged(password: $password)';
+}
+
+
 }
 
 /// @nodoc
-abstract class _$$LoginPressedImplCopyWith<$Res> {
-  factory _$$LoginPressedImplCopyWith(
-    _$LoginPressedImpl value,
-    $Res Function(_$LoginPressedImpl) then,
-  ) = __$$LoginPressedImplCopyWithImpl<$Res>;
+abstract mixin class _$PasswordChangedCopyWith<$Res> implements $AuthEventCopyWith<$Res> {
+  factory _$PasswordChangedCopyWith(_PasswordChanged value, $Res Function(_PasswordChanged) _then) = __$PasswordChangedCopyWithImpl;
+@useResult
+$Res call({
+ String password
+});
+
+
+
+
+}
+/// @nodoc
+class __$PasswordChangedCopyWithImpl<$Res>
+    implements _$PasswordChangedCopyWith<$Res> {
+  __$PasswordChangedCopyWithImpl(this._self, this._then);
+
+  final _PasswordChanged _self;
+  final $Res Function(_PasswordChanged) _then;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? password = null,}) {
+  return _then(_PasswordChanged(
+null == password ? _self.password : password // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-class __$$LoginPressedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$LoginPressedImpl>
-    implements _$$LoginPressedImplCopyWith<$Res> {
-  __$$LoginPressedImplCopyWithImpl(
-    _$LoginPressedImpl _value,
-    $Res Function(_$LoginPressedImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 
-class _$LoginPressedImpl implements _LoginPressed {
-  const _$LoginPressedImpl();
 
-  @override
-  String toString() {
-    return 'AuthEvent.loginPressed()';
-  }
+class _LoginPressed implements AuthEvent {
+  const _LoginPressed();
+  
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoginPressedImpl);
-  }
 
-  @override
-  int get hashCode => runtimeType.hashCode;
 
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return loginPressed();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return loginPressed?.call();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (loginPressed != null) {
-      return loginPressed();
-    }
-    return orElse();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return loginPressed(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return loginPressed?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (loginPressed != null) {
-      return loginPressed(this);
-    }
-    return orElse();
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _LoginPressed);
 }
 
-abstract class _LoginPressed implements AuthEvent {
-  const factory _LoginPressed() = _$LoginPressedImpl;
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'AuthEvent.loginPressed()';
+}
+
+
+}
+
+
+
+
+/// @nodoc
+
+
+class _LoginSuccessful implements AuthEvent {
+  const _LoginSuccessful();
+  
+
+
+
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _LoginSuccessful);
+}
+
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'AuthEvent.loginSuccessful()';
+}
+
+
+}
+
+
+
+
+/// @nodoc
+
+
+class _LoginFailed implements AuthEvent {
+  const _LoginFailed([this.message]);
+  
+
+ final  String? message;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$LoginFailedCopyWith<_LoginFailed> get copyWith => __$LoginFailedCopyWithImpl<_LoginFailed>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _LoginFailed&&(identical(other.message, message) || other.message == message));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,message);
+
+@override
+String toString() {
+  return 'AuthEvent.loginFailed(message: $message)';
+}
+
+
 }
 
 /// @nodoc
-abstract class _$$LoginSuccessfulImplCopyWith<$Res> {
-  factory _$$LoginSuccessfulImplCopyWith(
-    _$LoginSuccessfulImpl value,
-    $Res Function(_$LoginSuccessfulImpl) then,
-  ) = __$$LoginSuccessfulImplCopyWithImpl<$Res>;
+abstract mixin class _$LoginFailedCopyWith<$Res> implements $AuthEventCopyWith<$Res> {
+  factory _$LoginFailedCopyWith(_LoginFailed value, $Res Function(_LoginFailed) _then) = __$LoginFailedCopyWithImpl;
+@useResult
+$Res call({
+ String? message
+});
+
+
+
+
+}
+/// @nodoc
+class __$LoginFailedCopyWithImpl<$Res>
+    implements _$LoginFailedCopyWith<$Res> {
+  __$LoginFailedCopyWithImpl(this._self, this._then);
+
+  final _LoginFailed _self;
+  final $Res Function(_LoginFailed) _then;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? message = freezed,}) {
+  return _then(_LoginFailed(
+freezed == message ? _self.message : message // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-class __$$LoginSuccessfulImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$LoginSuccessfulImpl>
-    implements _$$LoginSuccessfulImplCopyWith<$Res> {
-  __$$LoginSuccessfulImplCopyWithImpl(
-    _$LoginSuccessfulImpl _value,
-    $Res Function(_$LoginSuccessfulImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 
-class _$LoginSuccessfulImpl implements _LoginSuccessful {
-  const _$LoginSuccessfulImpl();
 
-  @override
-  String toString() {
-    return 'AuthEvent.loginSuccessful()';
-  }
+class _FullNameChanged implements AuthEvent {
+  const _FullNameChanged(this.fullName);
+  
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoginSuccessfulImpl);
-  }
+ final  String fullName;
 
-  @override
-  int get hashCode => runtimeType.hashCode;
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$FullNameChangedCopyWith<_FullNameChanged> get copyWith => __$FullNameChangedCopyWithImpl<_FullNameChanged>(this, _$identity);
 
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return loginSuccessful();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return loginSuccessful?.call();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (loginSuccessful != null) {
-      return loginSuccessful();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return loginSuccessful(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return loginSuccessful?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (loginSuccessful != null) {
-      return loginSuccessful(this);
-    }
-    return orElse();
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _FullNameChanged&&(identical(other.fullName, fullName) || other.fullName == fullName));
 }
 
-abstract class _LoginSuccessful implements AuthEvent {
-  const factory _LoginSuccessful() = _$LoginSuccessfulImpl;
+
+@override
+int get hashCode => Object.hash(runtimeType,fullName);
+
+@override
+String toString() {
+  return 'AuthEvent.fullNameChanged(fullName: $fullName)';
+}
+
+
 }
 
 /// @nodoc
-abstract class _$$LoginFailedImplCopyWith<$Res> {
-  factory _$$LoginFailedImplCopyWith(
-    _$LoginFailedImpl value,
-    $Res Function(_$LoginFailedImpl) then,
-  ) = __$$LoginFailedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String? message});
+abstract mixin class _$FullNameChangedCopyWith<$Res> implements $AuthEventCopyWith<$Res> {
+  factory _$FullNameChangedCopyWith(_FullNameChanged value, $Res Function(_FullNameChanged) _then) = __$FullNameChangedCopyWithImpl;
+@useResult
+$Res call({
+ String fullName
+});
+
+
+
+
+}
+/// @nodoc
+class __$FullNameChangedCopyWithImpl<$Res>
+    implements _$FullNameChangedCopyWith<$Res> {
+  __$FullNameChangedCopyWithImpl(this._self, this._then);
+
+  final _FullNameChanged _self;
+  final $Res Function(_FullNameChanged) _then;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? fullName = null,}) {
+  return _then(_FullNameChanged(
+null == fullName ? _self.fullName : fullName // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-class __$$LoginFailedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$LoginFailedImpl>
-    implements _$$LoginFailedImplCopyWith<$Res> {
-  __$$LoginFailedImplCopyWithImpl(
-    _$LoginFailedImpl _value,
-    $Res Function(_$LoginFailedImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? message = freezed}) {
-    return _then(
-      _$LoginFailedImpl(
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                  as String?,
-      ),
-    );
-  }
 }
 
 /// @nodoc
 
-class _$LoginFailedImpl implements _LoginFailed {
-  const _$LoginFailedImpl([this.message]);
 
-  @override
-  final String? message;
+class _PhoneChanged implements AuthEvent {
+  const _PhoneChanged(this.phone);
+  
 
-  @override
-  String toString() {
-    return 'AuthEvent.loginFailed(message: $message)';
-  }
+ final  String phone;
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$LoginFailedImpl &&
-            (identical(other.message, message) || other.message == message));
-  }
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$PhoneChangedCopyWith<_PhoneChanged> get copyWith => __$PhoneChangedCopyWithImpl<_PhoneChanged>(this, _$identity);
 
-  @override
-  int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$LoginFailedImplCopyWith<_$LoginFailedImpl> get copyWith =>
-      __$$LoginFailedImplCopyWithImpl<_$LoginFailedImpl>(this, _$identity);
 
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return loginFailed(message);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return loginFailed?.call(message);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (loginFailed != null) {
-      return loginFailed(message);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return loginFailed(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return loginFailed?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (loginFailed != null) {
-      return loginFailed(this);
-    }
-    return orElse();
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _PhoneChanged&&(identical(other.phone, phone) || other.phone == phone));
 }
 
-abstract class _LoginFailed implements AuthEvent {
-  const factory _LoginFailed([final String? message]) = _$LoginFailedImpl;
 
-  String? get message;
+@override
+int get hashCode => Object.hash(runtimeType,phone);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$LoginFailedImplCopyWith<_$LoginFailedImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'AuthEvent.phoneChanged(phone: $phone)';
+}
+
+
 }
 
 /// @nodoc
-abstract class _$$FullNameChangedImplCopyWith<$Res> {
-  factory _$$FullNameChangedImplCopyWith(
-    _$FullNameChangedImpl value,
-    $Res Function(_$FullNameChangedImpl) then,
-  ) = __$$FullNameChangedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String fullName});
+abstract mixin class _$PhoneChangedCopyWith<$Res> implements $AuthEventCopyWith<$Res> {
+  factory _$PhoneChangedCopyWith(_PhoneChanged value, $Res Function(_PhoneChanged) _then) = __$PhoneChangedCopyWithImpl;
+@useResult
+$Res call({
+ String phone
+});
+
+
+
+
+}
+/// @nodoc
+class __$PhoneChangedCopyWithImpl<$Res>
+    implements _$PhoneChangedCopyWith<$Res> {
+  __$PhoneChangedCopyWithImpl(this._self, this._then);
+
+  final _PhoneChanged _self;
+  final $Res Function(_PhoneChanged) _then;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? phone = null,}) {
+  return _then(_PhoneChanged(
+null == phone ? _self.phone : phone // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-class __$$FullNameChangedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$FullNameChangedImpl>
-    implements _$$FullNameChangedImplCopyWith<$Res> {
-  __$$FullNameChangedImplCopyWithImpl(
-    _$FullNameChangedImpl _value,
-    $Res Function(_$FullNameChangedImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? fullName = null}) {
-    return _then(
-      _$FullNameChangedImpl(
-        null == fullName
-            ? _value.fullName
-            : fullName // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
-  }
 }
 
 /// @nodoc
 
-class _$FullNameChangedImpl implements _FullNameChanged {
-  const _$FullNameChangedImpl(this.fullName);
 
-  @override
-  final String fullName;
+class _RegisterPressed implements AuthEvent {
+  const _RegisterPressed();
+  
 
-  @override
-  String toString() {
-    return 'AuthEvent.fullNameChanged(fullName: $fullName)';
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FullNameChangedImpl &&
-            (identical(other.fullName, fullName) ||
-                other.fullName == fullName));
-  }
 
-  @override
-  int get hashCode => Object.hash(runtimeType, fullName);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FullNameChangedImplCopyWith<_$FullNameChangedImpl> get copyWith =>
-      __$$FullNameChangedImplCopyWithImpl<_$FullNameChangedImpl>(
-        this,
-        _$identity,
-      );
 
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return fullNameChanged(fullName);
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return fullNameChanged?.call(fullName);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (fullNameChanged != null) {
-      return fullNameChanged(fullName);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return fullNameChanged(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return fullNameChanged?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (fullNameChanged != null) {
-      return fullNameChanged(this);
-    }
-    return orElse();
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _RegisterPressed);
 }
 
-abstract class _FullNameChanged implements AuthEvent {
-  const factory _FullNameChanged(final String fullName) = _$FullNameChangedImpl;
 
-  String get fullName;
+@override
+int get hashCode => runtimeType.hashCode;
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$FullNameChangedImplCopyWith<_$FullNameChangedImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'AuthEvent.registerPressed()';
+}
+
+
+}
+
+
+
+
+/// @nodoc
+
+
+class _RegisterSuccessful implements AuthEvent {
+  const _RegisterSuccessful();
+  
+
+
+
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _RegisterSuccessful);
+}
+
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'AuthEvent.registerSuccessful()';
+}
+
+
+}
+
+
+
+
+/// @nodoc
+
+
+class _RegisterFailed implements AuthEvent {
+  const _RegisterFailed([this.message]);
+  
+
+ final  String? message;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$RegisterFailedCopyWith<_RegisterFailed> get copyWith => __$RegisterFailedCopyWithImpl<_RegisterFailed>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _RegisterFailed&&(identical(other.message, message) || other.message == message));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,message);
+
+@override
+String toString() {
+  return 'AuthEvent.registerFailed(message: $message)';
+}
+
+
 }
 
 /// @nodoc
-abstract class _$$PhoneChangedImplCopyWith<$Res> {
-  factory _$$PhoneChangedImplCopyWith(
-    _$PhoneChangedImpl value,
-    $Res Function(_$PhoneChangedImpl) then,
-  ) = __$$PhoneChangedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String phone});
+abstract mixin class _$RegisterFailedCopyWith<$Res> implements $AuthEventCopyWith<$Res> {
+  factory _$RegisterFailedCopyWith(_RegisterFailed value, $Res Function(_RegisterFailed) _then) = __$RegisterFailedCopyWithImpl;
+@useResult
+$Res call({
+ String? message
+});
+
+
+
+
+}
+/// @nodoc
+class __$RegisterFailedCopyWithImpl<$Res>
+    implements _$RegisterFailedCopyWith<$Res> {
+  __$RegisterFailedCopyWithImpl(this._self, this._then);
+
+  final _RegisterFailed _self;
+  final $Res Function(_RegisterFailed) _then;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? message = freezed,}) {
+  return _then(_RegisterFailed(
+freezed == message ? _self.message : message // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-class __$$PhoneChangedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$PhoneChangedImpl>
-    implements _$$PhoneChangedImplCopyWith<$Res> {
-  __$$PhoneChangedImplCopyWithImpl(
-    _$PhoneChangedImpl _value,
-    $Res Function(_$PhoneChangedImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? phone = null}) {
-    return _then(
-      _$PhoneChangedImpl(
-        null == phone
-            ? _value.phone
-            : phone // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
-  }
 }
 
 /// @nodoc
 
-class _$PhoneChangedImpl implements _PhoneChanged {
-  const _$PhoneChangedImpl(this.phone);
 
-  @override
-  final String phone;
+class _ForgotPasswordEmailChanged implements AuthEvent {
+  const _ForgotPasswordEmailChanged(this.email);
+  
 
-  @override
-  String toString() {
-    return 'AuthEvent.phoneChanged(phone: $phone)';
-  }
+ final  String email;
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$PhoneChangedImpl &&
-            (identical(other.phone, phone) || other.phone == phone));
-  }
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$ForgotPasswordEmailChangedCopyWith<_ForgotPasswordEmailChanged> get copyWith => __$ForgotPasswordEmailChangedCopyWithImpl<_ForgotPasswordEmailChanged>(this, _$identity);
 
-  @override
-  int get hashCode => Object.hash(runtimeType, phone);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$PhoneChangedImplCopyWith<_$PhoneChangedImpl> get copyWith =>
-      __$$PhoneChangedImplCopyWithImpl<_$PhoneChangedImpl>(this, _$identity);
 
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return phoneChanged(phone);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return phoneChanged?.call(phone);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (phoneChanged != null) {
-      return phoneChanged(phone);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return phoneChanged(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return phoneChanged?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (phoneChanged != null) {
-      return phoneChanged(this);
-    }
-    return orElse();
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ForgotPasswordEmailChanged&&(identical(other.email, email) || other.email == email));
 }
 
-abstract class _PhoneChanged implements AuthEvent {
-  const factory _PhoneChanged(final String phone) = _$PhoneChangedImpl;
 
-  String get phone;
+@override
+int get hashCode => Object.hash(runtimeType,email);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$PhoneChangedImplCopyWith<_$PhoneChangedImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'AuthEvent.forgotPasswordEmailChanged(email: $email)';
+}
+
+
 }
 
 /// @nodoc
-abstract class _$$RegisterPressedImplCopyWith<$Res> {
-  factory _$$RegisterPressedImplCopyWith(
-    _$RegisterPressedImpl value,
-    $Res Function(_$RegisterPressedImpl) then,
-  ) = __$$RegisterPressedImplCopyWithImpl<$Res>;
+abstract mixin class _$ForgotPasswordEmailChangedCopyWith<$Res> implements $AuthEventCopyWith<$Res> {
+  factory _$ForgotPasswordEmailChangedCopyWith(_ForgotPasswordEmailChanged value, $Res Function(_ForgotPasswordEmailChanged) _then) = __$ForgotPasswordEmailChangedCopyWithImpl;
+@useResult
+$Res call({
+ String email
+});
+
+
+
+
+}
+/// @nodoc
+class __$ForgotPasswordEmailChangedCopyWithImpl<$Res>
+    implements _$ForgotPasswordEmailChangedCopyWith<$Res> {
+  __$ForgotPasswordEmailChangedCopyWithImpl(this._self, this._then);
+
+  final _ForgotPasswordEmailChanged _self;
+  final $Res Function(_ForgotPasswordEmailChanged) _then;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? email = null,}) {
+  return _then(_ForgotPasswordEmailChanged(
+null == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-class __$$RegisterPressedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$RegisterPressedImpl>
-    implements _$$RegisterPressedImplCopyWith<$Res> {
-  __$$RegisterPressedImplCopyWithImpl(
-    _$RegisterPressedImpl _value,
-    $Res Function(_$RegisterPressedImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 
-class _$RegisterPressedImpl implements _RegisterPressed {
-  const _$RegisterPressedImpl();
 
-  @override
-  String toString() {
-    return 'AuthEvent.registerPressed()';
-  }
+class _ForgotPasswordPressed implements AuthEvent {
+  const _ForgotPasswordPressed();
+  
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$RegisterPressedImpl);
-  }
 
-  @override
-  int get hashCode => runtimeType.hashCode;
 
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return registerPressed();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return registerPressed?.call();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (registerPressed != null) {
-      return registerPressed();
-    }
-    return orElse();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return registerPressed(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return registerPressed?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (registerPressed != null) {
-      return registerPressed(this);
-    }
-    return orElse();
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ForgotPasswordPressed);
 }
 
-abstract class _RegisterPressed implements AuthEvent {
-  const factory _RegisterPressed() = _$RegisterPressedImpl;
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'AuthEvent.forgotPasswordPressed()';
+}
+
+
+}
+
+
+
+
+/// @nodoc
+
+
+class _ForgotPasswordSuccessful implements AuthEvent {
+  const _ForgotPasswordSuccessful();
+  
+
+
+
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ForgotPasswordSuccessful);
+}
+
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'AuthEvent.forgotPasswordSuccessful()';
+}
+
+
+}
+
+
+
+
+/// @nodoc
+
+
+class _ForgotPasswordFailed implements AuthEvent {
+  const _ForgotPasswordFailed([this.message]);
+  
+
+ final  String? message;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$ForgotPasswordFailedCopyWith<_ForgotPasswordFailed> get copyWith => __$ForgotPasswordFailedCopyWithImpl<_ForgotPasswordFailed>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ForgotPasswordFailed&&(identical(other.message, message) || other.message == message));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,message);
+
+@override
+String toString() {
+  return 'AuthEvent.forgotPasswordFailed(message: $message)';
+}
+
+
 }
 
 /// @nodoc
-abstract class _$$RegisterSuccessfulImplCopyWith<$Res> {
-  factory _$$RegisterSuccessfulImplCopyWith(
-    _$RegisterSuccessfulImpl value,
-    $Res Function(_$RegisterSuccessfulImpl) then,
-  ) = __$$RegisterSuccessfulImplCopyWithImpl<$Res>;
+abstract mixin class _$ForgotPasswordFailedCopyWith<$Res> implements $AuthEventCopyWith<$Res> {
+  factory _$ForgotPasswordFailedCopyWith(_ForgotPasswordFailed value, $Res Function(_ForgotPasswordFailed) _then) = __$ForgotPasswordFailedCopyWithImpl;
+@useResult
+$Res call({
+ String? message
+});
+
+
+
+
+}
+/// @nodoc
+class __$ForgotPasswordFailedCopyWithImpl<$Res>
+    implements _$ForgotPasswordFailedCopyWith<$Res> {
+  __$ForgotPasswordFailedCopyWithImpl(this._self, this._then);
+
+  final _ForgotPasswordFailed _self;
+  final $Res Function(_ForgotPasswordFailed) _then;
+
+/// Create a copy of AuthEvent
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? message = freezed,}) {
+  return _then(_ForgotPasswordFailed(
+freezed == message ? _self.message : message // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-class __$$RegisterSuccessfulImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$RegisterSuccessfulImpl>
-    implements _$$RegisterSuccessfulImplCopyWith<$Res> {
-  __$$RegisterSuccessfulImplCopyWithImpl(
-    _$RegisterSuccessfulImpl _value,
-    $Res Function(_$RegisterSuccessfulImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 
-class _$RegisterSuccessfulImpl implements _RegisterSuccessful {
-  const _$RegisterSuccessfulImpl();
 
-  @override
-  String toString() {
-    return 'AuthEvent.registerSuccessful()';
-  }
+class _ErrorMessageCleared implements AuthEvent {
+  const _ErrorMessageCleared();
+  
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$RegisterSuccessfulImpl);
-  }
 
-  @override
-  int get hashCode => runtimeType.hashCode;
 
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return registerSuccessful();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return registerSuccessful?.call();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (registerSuccessful != null) {
-      return registerSuccessful();
-    }
-    return orElse();
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return registerSuccessful(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return registerSuccessful?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (registerSuccessful != null) {
-      return registerSuccessful(this);
-    }
-    return orElse();
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ErrorMessageCleared);
 }
 
-abstract class _RegisterSuccessful implements AuthEvent {
-  const factory _RegisterSuccessful() = _$RegisterSuccessfulImpl;
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'AuthEvent.errorMessageCleared()';
 }
 
-/// @nodoc
-abstract class _$$RegisterFailedImplCopyWith<$Res> {
-  factory _$$RegisterFailedImplCopyWith(
-    _$RegisterFailedImpl value,
-    $Res Function(_$RegisterFailedImpl) then,
-  ) = __$$RegisterFailedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String? message});
+
 }
 
-/// @nodoc
-class __$$RegisterFailedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$RegisterFailedImpl>
-    implements _$$RegisterFailedImplCopyWith<$Res> {
-  __$$RegisterFailedImplCopyWithImpl(
-    _$RegisterFailedImpl _value,
-    $Res Function(_$RegisterFailedImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? message = freezed}) {
-    return _then(
-      _$RegisterFailedImpl(
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                  as String?,
-      ),
-    );
-  }
-}
+
 
 /// @nodoc
 
-class _$RegisterFailedImpl implements _RegisterFailed {
-  const _$RegisterFailedImpl([this.message]);
 
-  @override
-  final String? message;
+class _LogoutPressed implements AuthEvent {
+  const _LogoutPressed();
+  
 
-  @override
-  String toString() {
-    return 'AuthEvent.registerFailed(message: $message)';
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$RegisterFailedImpl &&
-            (identical(other.message, message) || other.message == message));
-  }
 
-  @override
-  int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$RegisterFailedImplCopyWith<_$RegisterFailedImpl> get copyWith =>
-      __$$RegisterFailedImplCopyWithImpl<_$RegisterFailedImpl>(
-        this,
-        _$identity,
-      );
 
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return registerFailed(message);
-  }
 
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return registerFailed?.call(message);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (registerFailed != null) {
-      return registerFailed(message);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return registerFailed(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return registerFailed?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (registerFailed != null) {
-      return registerFailed(this);
-    }
-    return orElse();
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _LogoutPressed);
 }
 
-abstract class _RegisterFailed implements AuthEvent {
-  const factory _RegisterFailed([final String? message]) = _$RegisterFailedImpl;
 
-  String? get message;
+@override
+int get hashCode => runtimeType.hashCode;
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$RegisterFailedImplCopyWith<_$RegisterFailedImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'AuthEvent.logoutPressed()';
 }
 
-/// @nodoc
-abstract class _$$ForgotPasswordEmailChangedImplCopyWith<$Res> {
-  factory _$$ForgotPasswordEmailChangedImplCopyWith(
-    _$ForgotPasswordEmailChangedImpl value,
-    $Res Function(_$ForgotPasswordEmailChangedImpl) then,
-  ) = __$$ForgotPasswordEmailChangedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String email});
+
 }
 
-/// @nodoc
-class __$$ForgotPasswordEmailChangedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$ForgotPasswordEmailChangedImpl>
-    implements _$$ForgotPasswordEmailChangedImplCopyWith<$Res> {
-  __$$ForgotPasswordEmailChangedImplCopyWithImpl(
-    _$ForgotPasswordEmailChangedImpl _value,
-    $Res Function(_$ForgotPasswordEmailChangedImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? email = null}) {
-    return _then(
-      _$ForgotPasswordEmailChangedImpl(
-        null == email
-            ? _value.email
-            : email // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
-  }
-}
 
-/// @nodoc
-
-class _$ForgotPasswordEmailChangedImpl implements _ForgotPasswordEmailChanged {
-  const _$ForgotPasswordEmailChangedImpl(this.email);
-
-  @override
-  final String email;
-
-  @override
-  String toString() {
-    return 'AuthEvent.forgotPasswordEmailChanged(email: $email)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ForgotPasswordEmailChangedImpl &&
-            (identical(other.email, email) || other.email == email));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, email);
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ForgotPasswordEmailChangedImplCopyWith<_$ForgotPasswordEmailChangedImpl>
-  get copyWith =>
-      __$$ForgotPasswordEmailChangedImplCopyWithImpl<
-        _$ForgotPasswordEmailChangedImpl
-      >(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return forgotPasswordEmailChanged(email);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return forgotPasswordEmailChanged?.call(email);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (forgotPasswordEmailChanged != null) {
-      return forgotPasswordEmailChanged(email);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return forgotPasswordEmailChanged(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return forgotPasswordEmailChanged?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (forgotPasswordEmailChanged != null) {
-      return forgotPasswordEmailChanged(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _ForgotPasswordEmailChanged implements AuthEvent {
-  const factory _ForgotPasswordEmailChanged(final String email) =
-      _$ForgotPasswordEmailChangedImpl;
-
-  String get email;
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ForgotPasswordEmailChangedImplCopyWith<_$ForgotPasswordEmailChangedImpl>
-  get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$ForgotPasswordPressedImplCopyWith<$Res> {
-  factory _$$ForgotPasswordPressedImplCopyWith(
-    _$ForgotPasswordPressedImpl value,
-    $Res Function(_$ForgotPasswordPressedImpl) then,
-  ) = __$$ForgotPasswordPressedImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$ForgotPasswordPressedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$ForgotPasswordPressedImpl>
-    implements _$$ForgotPasswordPressedImplCopyWith<$Res> {
-  __$$ForgotPasswordPressedImplCopyWithImpl(
-    _$ForgotPasswordPressedImpl _value,
-    $Res Function(_$ForgotPasswordPressedImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-
-class _$ForgotPasswordPressedImpl implements _ForgotPasswordPressed {
-  const _$ForgotPasswordPressedImpl();
-
-  @override
-  String toString() {
-    return 'AuthEvent.forgotPasswordPressed()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ForgotPasswordPressedImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return forgotPasswordPressed();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return forgotPasswordPressed?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (forgotPasswordPressed != null) {
-      return forgotPasswordPressed();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return forgotPasswordPressed(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return forgotPasswordPressed?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (forgotPasswordPressed != null) {
-      return forgotPasswordPressed(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _ForgotPasswordPressed implements AuthEvent {
-  const factory _ForgotPasswordPressed() = _$ForgotPasswordPressedImpl;
-}
-
-/// @nodoc
-abstract class _$$ForgotPasswordSuccessfulImplCopyWith<$Res> {
-  factory _$$ForgotPasswordSuccessfulImplCopyWith(
-    _$ForgotPasswordSuccessfulImpl value,
-    $Res Function(_$ForgotPasswordSuccessfulImpl) then,
-  ) = __$$ForgotPasswordSuccessfulImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$ForgotPasswordSuccessfulImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$ForgotPasswordSuccessfulImpl>
-    implements _$$ForgotPasswordSuccessfulImplCopyWith<$Res> {
-  __$$ForgotPasswordSuccessfulImplCopyWithImpl(
-    _$ForgotPasswordSuccessfulImpl _value,
-    $Res Function(_$ForgotPasswordSuccessfulImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-
-class _$ForgotPasswordSuccessfulImpl implements _ForgotPasswordSuccessful {
-  const _$ForgotPasswordSuccessfulImpl();
-
-  @override
-  String toString() {
-    return 'AuthEvent.forgotPasswordSuccessful()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ForgotPasswordSuccessfulImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return forgotPasswordSuccessful();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return forgotPasswordSuccessful?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (forgotPasswordSuccessful != null) {
-      return forgotPasswordSuccessful();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return forgotPasswordSuccessful(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return forgotPasswordSuccessful?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (forgotPasswordSuccessful != null) {
-      return forgotPasswordSuccessful(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _ForgotPasswordSuccessful implements AuthEvent {
-  const factory _ForgotPasswordSuccessful() = _$ForgotPasswordSuccessfulImpl;
-}
-
-/// @nodoc
-abstract class _$$ForgotPasswordFailedImplCopyWith<$Res> {
-  factory _$$ForgotPasswordFailedImplCopyWith(
-    _$ForgotPasswordFailedImpl value,
-    $Res Function(_$ForgotPasswordFailedImpl) then,
-  ) = __$$ForgotPasswordFailedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String? message});
-}
-
-/// @nodoc
-class __$$ForgotPasswordFailedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$ForgotPasswordFailedImpl>
-    implements _$$ForgotPasswordFailedImplCopyWith<$Res> {
-  __$$ForgotPasswordFailedImplCopyWithImpl(
-    _$ForgotPasswordFailedImpl _value,
-    $Res Function(_$ForgotPasswordFailedImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? message = freezed}) {
-    return _then(
-      _$ForgotPasswordFailedImpl(
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                  as String?,
-      ),
-    );
-  }
-}
-
-/// @nodoc
-
-class _$ForgotPasswordFailedImpl implements _ForgotPasswordFailed {
-  const _$ForgotPasswordFailedImpl([this.message]);
-
-  @override
-  final String? message;
-
-  @override
-  String toString() {
-    return 'AuthEvent.forgotPasswordFailed(message: $message)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ForgotPasswordFailedImpl &&
-            (identical(other.message, message) || other.message == message));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, message);
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ForgotPasswordFailedImplCopyWith<_$ForgotPasswordFailedImpl>
-  get copyWith =>
-      __$$ForgotPasswordFailedImplCopyWithImpl<_$ForgotPasswordFailedImpl>(
-        this,
-        _$identity,
-      );
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return forgotPasswordFailed(message);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return forgotPasswordFailed?.call(message);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (forgotPasswordFailed != null) {
-      return forgotPasswordFailed(message);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return forgotPasswordFailed(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return forgotPasswordFailed?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (forgotPasswordFailed != null) {
-      return forgotPasswordFailed(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _ForgotPasswordFailed implements AuthEvent {
-  const factory _ForgotPasswordFailed([final String? message]) =
-      _$ForgotPasswordFailedImpl;
-
-  String? get message;
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ForgotPasswordFailedImplCopyWith<_$ForgotPasswordFailedImpl>
-  get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$ErrorMessageClearedImplCopyWith<$Res> {
-  factory _$$ErrorMessageClearedImplCopyWith(
-    _$ErrorMessageClearedImpl value,
-    $Res Function(_$ErrorMessageClearedImpl) then,
-  ) = __$$ErrorMessageClearedImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$ErrorMessageClearedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$ErrorMessageClearedImpl>
-    implements _$$ErrorMessageClearedImplCopyWith<$Res> {
-  __$$ErrorMessageClearedImplCopyWithImpl(
-    _$ErrorMessageClearedImpl _value,
-    $Res Function(_$ErrorMessageClearedImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-
-class _$ErrorMessageClearedImpl implements _ErrorMessageCleared {
-  const _$ErrorMessageClearedImpl();
-
-  @override
-  String toString() {
-    return 'AuthEvent.errorMessageCleared()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ErrorMessageClearedImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return errorMessageCleared();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return errorMessageCleared?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (errorMessageCleared != null) {
-      return errorMessageCleared();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return errorMessageCleared(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return errorMessageCleared?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (errorMessageCleared != null) {
-      return errorMessageCleared(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _ErrorMessageCleared implements AuthEvent {
-  const factory _ErrorMessageCleared() = _$ErrorMessageClearedImpl;
-}
-
-/// @nodoc
-abstract class _$$LogoutPressedImplCopyWith<$Res> {
-  factory _$$LogoutPressedImplCopyWith(
-    _$LogoutPressedImpl value,
-    $Res Function(_$LogoutPressedImpl) then,
-  ) = __$$LogoutPressedImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$LogoutPressedImplCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res, _$LogoutPressedImpl>
-    implements _$$LogoutPressedImplCopyWith<$Res> {
-  __$$LogoutPressedImplCopyWithImpl(
-    _$LogoutPressedImpl _value,
-    $Res Function(_$LogoutPressedImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of AuthEvent
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-
-class _$LogoutPressedImpl implements _LogoutPressed {
-  const _$LogoutPressedImpl();
-
-  @override
-  String toString() {
-    return 'AuthEvent.logoutPressed()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LogoutPressedImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(String email) emailChanged,
-    required TResult Function(String password) passwordChanged,
-    required TResult Function() loginPressed,
-    required TResult Function() loginSuccessful,
-    required TResult Function(String? message) loginFailed,
-    required TResult Function(String fullName) fullNameChanged,
-    required TResult Function(String phone) phoneChanged,
-    required TResult Function() registerPressed,
-    required TResult Function() registerSuccessful,
-    required TResult Function(String? message) registerFailed,
-    required TResult Function(String email) forgotPasswordEmailChanged,
-    required TResult Function() forgotPasswordPressed,
-    required TResult Function() forgotPasswordSuccessful,
-    required TResult Function(String? message) forgotPasswordFailed,
-    required TResult Function() errorMessageCleared,
-    required TResult Function() logoutPressed,
-  }) {
-    return logoutPressed();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(String email)? emailChanged,
-    TResult? Function(String password)? passwordChanged,
-    TResult? Function()? loginPressed,
-    TResult? Function()? loginSuccessful,
-    TResult? Function(String? message)? loginFailed,
-    TResult? Function(String fullName)? fullNameChanged,
-    TResult? Function(String phone)? phoneChanged,
-    TResult? Function()? registerPressed,
-    TResult? Function()? registerSuccessful,
-    TResult? Function(String? message)? registerFailed,
-    TResult? Function(String email)? forgotPasswordEmailChanged,
-    TResult? Function()? forgotPasswordPressed,
-    TResult? Function()? forgotPasswordSuccessful,
-    TResult? Function(String? message)? forgotPasswordFailed,
-    TResult? Function()? errorMessageCleared,
-    TResult? Function()? logoutPressed,
-  }) {
-    return logoutPressed?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? loginPressed,
-    TResult Function()? loginSuccessful,
-    TResult Function(String? message)? loginFailed,
-    TResult Function(String fullName)? fullNameChanged,
-    TResult Function(String phone)? phoneChanged,
-    TResult Function()? registerPressed,
-    TResult Function()? registerSuccessful,
-    TResult Function(String? message)? registerFailed,
-    TResult Function(String email)? forgotPasswordEmailChanged,
-    TResult Function()? forgotPasswordPressed,
-    TResult Function()? forgotPasswordSuccessful,
-    TResult Function(String? message)? forgotPasswordFailed,
-    TResult Function()? errorMessageCleared,
-    TResult Function()? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (logoutPressed != null) {
-      return logoutPressed();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AuthEvent value) $default, {
-    required TResult Function(_EmailChanged value) emailChanged,
-    required TResult Function(_PasswordChanged value) passwordChanged,
-    required TResult Function(_LoginPressed value) loginPressed,
-    required TResult Function(_LoginSuccessful value) loginSuccessful,
-    required TResult Function(_LoginFailed value) loginFailed,
-    required TResult Function(_FullNameChanged value) fullNameChanged,
-    required TResult Function(_PhoneChanged value) phoneChanged,
-    required TResult Function(_RegisterPressed value) registerPressed,
-    required TResult Function(_RegisterSuccessful value) registerSuccessful,
-    required TResult Function(_RegisterFailed value) registerFailed,
-    required TResult Function(_ForgotPasswordEmailChanged value)
-    forgotPasswordEmailChanged,
-    required TResult Function(_ForgotPasswordPressed value)
-    forgotPasswordPressed,
-    required TResult Function(_ForgotPasswordSuccessful value)
-    forgotPasswordSuccessful,
-    required TResult Function(_ForgotPasswordFailed value) forgotPasswordFailed,
-    required TResult Function(_ErrorMessageCleared value) errorMessageCleared,
-    required TResult Function(_LogoutPressed value) logoutPressed,
-  }) {
-    return logoutPressed(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AuthEvent value)? $default, {
-    TResult? Function(_EmailChanged value)? emailChanged,
-    TResult? Function(_PasswordChanged value)? passwordChanged,
-    TResult? Function(_LoginPressed value)? loginPressed,
-    TResult? Function(_LoginSuccessful value)? loginSuccessful,
-    TResult? Function(_LoginFailed value)? loginFailed,
-    TResult? Function(_FullNameChanged value)? fullNameChanged,
-    TResult? Function(_PhoneChanged value)? phoneChanged,
-    TResult? Function(_RegisterPressed value)? registerPressed,
-    TResult? Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult? Function(_RegisterFailed value)? registerFailed,
-    TResult? Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult? Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult? Function(_ForgotPasswordSuccessful value)?
-    forgotPasswordSuccessful,
-    TResult? Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult? Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult? Function(_LogoutPressed value)? logoutPressed,
-  }) {
-    return logoutPressed?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AuthEvent value)? $default, {
-    TResult Function(_EmailChanged value)? emailChanged,
-    TResult Function(_PasswordChanged value)? passwordChanged,
-    TResult Function(_LoginPressed value)? loginPressed,
-    TResult Function(_LoginSuccessful value)? loginSuccessful,
-    TResult Function(_LoginFailed value)? loginFailed,
-    TResult Function(_FullNameChanged value)? fullNameChanged,
-    TResult Function(_PhoneChanged value)? phoneChanged,
-    TResult Function(_RegisterPressed value)? registerPressed,
-    TResult Function(_RegisterSuccessful value)? registerSuccessful,
-    TResult Function(_RegisterFailed value)? registerFailed,
-    TResult Function(_ForgotPasswordEmailChanged value)?
-    forgotPasswordEmailChanged,
-    TResult Function(_ForgotPasswordPressed value)? forgotPasswordPressed,
-    TResult Function(_ForgotPasswordSuccessful value)? forgotPasswordSuccessful,
-    TResult Function(_ForgotPasswordFailed value)? forgotPasswordFailed,
-    TResult Function(_ErrorMessageCleared value)? errorMessageCleared,
-    TResult Function(_LogoutPressed value)? logoutPressed,
-    required TResult orElse(),
-  }) {
-    if (logoutPressed != null) {
-      return logoutPressed(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _LogoutPressed implements AuthEvent {
-  const factory _LogoutPressed() = _$LogoutPressedImpl;
-}
 
 /// @nodoc
 mixin _$AuthState {
-  // --- Form Fields ---
-  EmailFormz get email => throw _privateConstructorUsedError;
-  PasswordFormz get password => throw _privateConstructorUsedError;
-  FullNameFormz get fullName => throw _privateConstructorUsedError;
-  PhoneFormz get phone => throw _privateConstructorUsedError;
-  ForgotPasswordFormz get forgotPasswordEmail =>
-      throw _privateConstructorUsedError; // --- Submission Statuses ---
-  FormzSubmissionStatus get loginStatus => throw _privateConstructorUsedError;
-  FormzSubmissionStatus get registerStatus =>
-      throw _privateConstructorUsedError;
-  FormzSubmissionStatus get forgotPasswordStatus =>
-      throw _privateConstructorUsedError; // --- User Data ---
-  User? get user => throw _privateConstructorUsedError;
-  String? get userEmail =>
-      throw _privateConstructorUsedError; // --- Error Handling ---
-  String? get errorMessage => throw _privateConstructorUsedError;
 
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $AuthStateCopyWith<AuthState> get copyWith =>
-      throw _privateConstructorUsedError;
+// --- Form Fields ---
+ EmailFormz get email; PasswordFormz get password; FullNameFormz get fullName; PhoneFormz get phone; ForgotPasswordFormz get forgotPasswordEmail;// --- Submission Statuses ---
+ FormzSubmissionStatus get loginStatus; FormzSubmissionStatus get registerStatus; FormzSubmissionStatus get forgotPasswordStatus;// --- User Data ---
+ User? get user; String? get userEmail;// --- Error Handling ---
+ String? get errorMessage;
+/// Create a copy of AuthState
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$AuthStateCopyWith<AuthState> get copyWith => _$AuthStateCopyWithImpl<AuthState>(this as AuthState, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AuthState&&(identical(other.email, email) || other.email == email)&&(identical(other.password, password) || other.password == password)&&(identical(other.fullName, fullName) || other.fullName == fullName)&&(identical(other.phone, phone) || other.phone == phone)&&(identical(other.forgotPasswordEmail, forgotPasswordEmail) || other.forgotPasswordEmail == forgotPasswordEmail)&&(identical(other.loginStatus, loginStatus) || other.loginStatus == loginStatus)&&(identical(other.registerStatus, registerStatus) || other.registerStatus == registerStatus)&&(identical(other.forgotPasswordStatus, forgotPasswordStatus) || other.forgotPasswordStatus == forgotPasswordStatus)&&(identical(other.user, user) || other.user == user)&&(identical(other.userEmail, userEmail) || other.userEmail == userEmail)&&(identical(other.errorMessage, errorMessage) || other.errorMessage == errorMessage));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,email,password,fullName,phone,forgotPasswordEmail,loginStatus,registerStatus,forgotPasswordStatus,user,userEmail,errorMessage);
+
+@override
+String toString() {
+  return 'AuthState(email: $email, password: $password, fullName: $fullName, phone: $phone, forgotPasswordEmail: $forgotPasswordEmail, loginStatus: $loginStatus, registerStatus: $registerStatus, forgotPasswordStatus: $forgotPasswordStatus, user: $user, userEmail: $userEmail, errorMessage: $errorMessage)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $AuthStateCopyWith<$Res> {
-  factory $AuthStateCopyWith(AuthState value, $Res Function(AuthState) then) =
-      _$AuthStateCopyWithImpl<$Res, AuthState>;
-  @useResult
-  $Res call({
-    EmailFormz email,
-    PasswordFormz password,
-    FullNameFormz fullName,
-    PhoneFormz phone,
-    ForgotPasswordFormz forgotPasswordEmail,
-    FormzSubmissionStatus loginStatus,
-    FormzSubmissionStatus registerStatus,
-    FormzSubmissionStatus forgotPasswordStatus,
-    User? user,
-    String? userEmail,
-    String? errorMessage,
-  });
-}
+abstract mixin class $AuthStateCopyWith<$Res>  {
+  factory $AuthStateCopyWith(AuthState value, $Res Function(AuthState) _then) = _$AuthStateCopyWithImpl;
+@useResult
+$Res call({
+ EmailFormz email, PasswordFormz password, FullNameFormz fullName, PhoneFormz phone, ForgotPasswordFormz forgotPasswordEmail, FormzSubmissionStatus loginStatus, FormzSubmissionStatus registerStatus, FormzSubmissionStatus forgotPasswordStatus, User? user, String? userEmail, String? errorMessage
+});
 
+
+
+
+}
 /// @nodoc
-class _$AuthStateCopyWithImpl<$Res, $Val extends AuthState>
+class _$AuthStateCopyWithImpl<$Res>
     implements $AuthStateCopyWith<$Res> {
-  _$AuthStateCopyWithImpl(this._value, this._then);
+  _$AuthStateCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final AuthState _self;
+  final $Res Function(AuthState) _then;
 
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? email = null,
-    Object? password = null,
-    Object? fullName = null,
-    Object? phone = null,
-    Object? forgotPasswordEmail = null,
-    Object? loginStatus = null,
-    Object? registerStatus = null,
-    Object? forgotPasswordStatus = null,
-    Object? user = freezed,
-    Object? userEmail = freezed,
-    Object? errorMessage = freezed,
-  }) {
-    return _then(
-      _value.copyWith(
-            email: null == email
-                ? _value.email
-                : email // ignore: cast_nullable_to_non_nullable
-                      as EmailFormz,
-            password: null == password
-                ? _value.password
-                : password // ignore: cast_nullable_to_non_nullable
-                      as PasswordFormz,
-            fullName: null == fullName
-                ? _value.fullName
-                : fullName // ignore: cast_nullable_to_non_nullable
-                      as FullNameFormz,
-            phone: null == phone
-                ? _value.phone
-                : phone // ignore: cast_nullable_to_non_nullable
-                      as PhoneFormz,
-            forgotPasswordEmail: null == forgotPasswordEmail
-                ? _value.forgotPasswordEmail
-                : forgotPasswordEmail // ignore: cast_nullable_to_non_nullable
-                      as ForgotPasswordFormz,
-            loginStatus: null == loginStatus
-                ? _value.loginStatus
-                : loginStatus // ignore: cast_nullable_to_non_nullable
-                      as FormzSubmissionStatus,
-            registerStatus: null == registerStatus
-                ? _value.registerStatus
-                : registerStatus // ignore: cast_nullable_to_non_nullable
-                      as FormzSubmissionStatus,
-            forgotPasswordStatus: null == forgotPasswordStatus
-                ? _value.forgotPasswordStatus
-                : forgotPasswordStatus // ignore: cast_nullable_to_non_nullable
-                      as FormzSubmissionStatus,
-            user: freezed == user
-                ? _value.user
-                : user // ignore: cast_nullable_to_non_nullable
-                      as User?,
-            userEmail: freezed == userEmail
-                ? _value.userEmail
-                : userEmail // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            errorMessage: freezed == errorMessage
-                ? _value.errorMessage
-                : errorMessage // ignore: cast_nullable_to_non_nullable
-                      as String?,
-          )
-          as $Val,
-    );
-  }
+/// Create a copy of AuthState
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? email = null,Object? password = null,Object? fullName = null,Object? phone = null,Object? forgotPasswordEmail = null,Object? loginStatus = null,Object? registerStatus = null,Object? forgotPasswordStatus = null,Object? user = freezed,Object? userEmail = freezed,Object? errorMessage = freezed,}) {
+  return _then(_self.copyWith(
+email: null == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
+as EmailFormz,password: null == password ? _self.password : password // ignore: cast_nullable_to_non_nullable
+as PasswordFormz,fullName: null == fullName ? _self.fullName : fullName // ignore: cast_nullable_to_non_nullable
+as FullNameFormz,phone: null == phone ? _self.phone : phone // ignore: cast_nullable_to_non_nullable
+as PhoneFormz,forgotPasswordEmail: null == forgotPasswordEmail ? _self.forgotPasswordEmail : forgotPasswordEmail // ignore: cast_nullable_to_non_nullable
+as ForgotPasswordFormz,loginStatus: null == loginStatus ? _self.loginStatus : loginStatus // ignore: cast_nullable_to_non_nullable
+as FormzSubmissionStatus,registerStatus: null == registerStatus ? _self.registerStatus : registerStatus // ignore: cast_nullable_to_non_nullable
+as FormzSubmissionStatus,forgotPasswordStatus: null == forgotPasswordStatus ? _self.forgotPasswordStatus : forgotPasswordStatus // ignore: cast_nullable_to_non_nullable
+as FormzSubmissionStatus,user: freezed == user ? _self.user : user // ignore: cast_nullable_to_non_nullable
+as User?,userEmail: freezed == userEmail ? _self.userEmail : userEmail // ignore: cast_nullable_to_non_nullable
+as String?,errorMessage: freezed == errorMessage ? _self.errorMessage : errorMessage // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$AuthStateImplCopyWith<$Res>
-    implements $AuthStateCopyWith<$Res> {
-  factory _$$AuthStateImplCopyWith(
-    _$AuthStateImpl value,
-    $Res Function(_$AuthStateImpl) then,
-  ) = __$$AuthStateImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({
-    EmailFormz email,
-    PasswordFormz password,
-    FullNameFormz fullName,
-    PhoneFormz phone,
-    ForgotPasswordFormz forgotPasswordEmail,
-    FormzSubmissionStatus loginStatus,
-    FormzSubmissionStatus registerStatus,
-    FormzSubmissionStatus forgotPasswordStatus,
-    User? user,
-    String? userEmail,
-    String? errorMessage,
-  });
 }
 
-/// @nodoc
-class __$$AuthStateImplCopyWithImpl<$Res>
-    extends _$AuthStateCopyWithImpl<$Res, _$AuthStateImpl>
-    implements _$$AuthStateImplCopyWith<$Res> {
-  __$$AuthStateImplCopyWithImpl(
-    _$AuthStateImpl _value,
-    $Res Function(_$AuthStateImpl) _then,
-  ) : super(_value, _then);
 
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? email = null,
-    Object? password = null,
-    Object? fullName = null,
-    Object? phone = null,
-    Object? forgotPasswordEmail = null,
-    Object? loginStatus = null,
-    Object? registerStatus = null,
-    Object? forgotPasswordStatus = null,
-    Object? user = freezed,
-    Object? userEmail = freezed,
-    Object? errorMessage = freezed,
-  }) {
-    return _then(
-      _$AuthStateImpl(
-        email: null == email
-            ? _value.email
-            : email // ignore: cast_nullable_to_non_nullable
-                  as EmailFormz,
-        password: null == password
-            ? _value.password
-            : password // ignore: cast_nullable_to_non_nullable
-                  as PasswordFormz,
-        fullName: null == fullName
-            ? _value.fullName
-            : fullName // ignore: cast_nullable_to_non_nullable
-                  as FullNameFormz,
-        phone: null == phone
-            ? _value.phone
-            : phone // ignore: cast_nullable_to_non_nullable
-                  as PhoneFormz,
-        forgotPasswordEmail: null == forgotPasswordEmail
-            ? _value.forgotPasswordEmail
-            : forgotPasswordEmail // ignore: cast_nullable_to_non_nullable
-                  as ForgotPasswordFormz,
-        loginStatus: null == loginStatus
-            ? _value.loginStatus
-            : loginStatus // ignore: cast_nullable_to_non_nullable
-                  as FormzSubmissionStatus,
-        registerStatus: null == registerStatus
-            ? _value.registerStatus
-            : registerStatus // ignore: cast_nullable_to_non_nullable
-                  as FormzSubmissionStatus,
-        forgotPasswordStatus: null == forgotPasswordStatus
-            ? _value.forgotPasswordStatus
-            : forgotPasswordStatus // ignore: cast_nullable_to_non_nullable
-                  as FormzSubmissionStatus,
-        user: freezed == user
-            ? _value.user
-            : user // ignore: cast_nullable_to_non_nullable
-                  as User?,
-        userEmail: freezed == userEmail
-            ? _value.userEmail
-            : userEmail // ignore: cast_nullable_to_non_nullable
-                  as String?,
-        errorMessage: freezed == errorMessage
-            ? _value.errorMessage
-            : errorMessage // ignore: cast_nullable_to_non_nullable
-                  as String?,
-      ),
-    );
-  }
+/// Adds pattern-matching-related methods to [AuthState].
+extension AuthStatePatterns on AuthState {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _AuthState value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _AuthState() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _AuthState value)  $default,){
+final _that = this;
+switch (_that) {
+case _AuthState():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _AuthState value)?  $default,){
+final _that = this;
+switch (_that) {
+case _AuthState() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( EmailFormz email,  PasswordFormz password,  FullNameFormz fullName,  PhoneFormz phone,  ForgotPasswordFormz forgotPasswordEmail,  FormzSubmissionStatus loginStatus,  FormzSubmissionStatus registerStatus,  FormzSubmissionStatus forgotPasswordStatus,  User? user,  String? userEmail,  String? errorMessage)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _AuthState() when $default != null:
+return $default(_that.email,_that.password,_that.fullName,_that.phone,_that.forgotPasswordEmail,_that.loginStatus,_that.registerStatus,_that.forgotPasswordStatus,_that.user,_that.userEmail,_that.errorMessage);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( EmailFormz email,  PasswordFormz password,  FullNameFormz fullName,  PhoneFormz phone,  ForgotPasswordFormz forgotPasswordEmail,  FormzSubmissionStatus loginStatus,  FormzSubmissionStatus registerStatus,  FormzSubmissionStatus forgotPasswordStatus,  User? user,  String? userEmail,  String? errorMessage)  $default,) {final _that = this;
+switch (_that) {
+case _AuthState():
+return $default(_that.email,_that.password,_that.fullName,_that.phone,_that.forgotPasswordEmail,_that.loginStatus,_that.registerStatus,_that.forgotPasswordStatus,_that.user,_that.userEmail,_that.errorMessage);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( EmailFormz email,  PasswordFormz password,  FullNameFormz fullName,  PhoneFormz phone,  ForgotPasswordFormz forgotPasswordEmail,  FormzSubmissionStatus loginStatus,  FormzSubmissionStatus registerStatus,  FormzSubmissionStatus forgotPasswordStatus,  User? user,  String? userEmail,  String? errorMessage)?  $default,) {final _that = this;
+switch (_that) {
+case _AuthState() when $default != null:
+return $default(_that.email,_that.password,_that.fullName,_that.phone,_that.forgotPasswordEmail,_that.loginStatus,_that.registerStatus,_that.forgotPasswordStatus,_that.user,_that.userEmail,_that.errorMessage);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 
-class _$AuthStateImpl extends _AuthState {
-  const _$AuthStateImpl({
-    this.email = const EmailFormz.pure(),
-    this.password = const PasswordFormz.pure(),
-    this.fullName = const FullNameFormz.pure(),
-    this.phone = const PhoneFormz.pure(),
-    this.forgotPasswordEmail = const ForgotPasswordFormz.pure(),
-    this.loginStatus = FormzSubmissionStatus.initial,
-    this.registerStatus = FormzSubmissionStatus.initial,
-    this.forgotPasswordStatus = FormzSubmissionStatus.initial,
-    this.user,
-    this.userEmail,
-    this.errorMessage,
-  }) : super._();
 
-  // --- Form Fields ---
-  @override
-  @JsonKey()
-  final EmailFormz email;
-  @override
-  @JsonKey()
-  final PasswordFormz password;
-  @override
-  @JsonKey()
-  final FullNameFormz fullName;
-  @override
-  @JsonKey()
-  final PhoneFormz phone;
-  @override
-  @JsonKey()
-  final ForgotPasswordFormz forgotPasswordEmail;
-  // --- Submission Statuses ---
-  @override
-  @JsonKey()
-  final FormzSubmissionStatus loginStatus;
-  @override
-  @JsonKey()
-  final FormzSubmissionStatus registerStatus;
-  @override
-  @JsonKey()
-  final FormzSubmissionStatus forgotPasswordStatus;
-  // --- User Data ---
-  @override
-  final User? user;
-  @override
-  final String? userEmail;
-  // --- Error Handling ---
-  @override
-  final String? errorMessage;
+class _AuthState extends AuthState {
+  const _AuthState({this.email = const EmailFormz.pure(), this.password = const PasswordFormz.pure(), this.fullName = const FullNameFormz.pure(), this.phone = const PhoneFormz.pure(), this.forgotPasswordEmail = const ForgotPasswordFormz.pure(), this.loginStatus = FormzSubmissionStatus.initial, this.registerStatus = FormzSubmissionStatus.initial, this.forgotPasswordStatus = FormzSubmissionStatus.initial, this.user, this.userEmail, this.errorMessage}): super._();
+  
 
-  @override
-  String toString() {
-    return 'AuthState(email: $email, password: $password, fullName: $fullName, phone: $phone, forgotPasswordEmail: $forgotPasswordEmail, loginStatus: $loginStatus, registerStatus: $registerStatus, forgotPasswordStatus: $forgotPasswordStatus, user: $user, userEmail: $userEmail, errorMessage: $errorMessage)';
-  }
+// --- Form Fields ---
+@override@JsonKey() final  EmailFormz email;
+@override@JsonKey() final  PasswordFormz password;
+@override@JsonKey() final  FullNameFormz fullName;
+@override@JsonKey() final  PhoneFormz phone;
+@override@JsonKey() final  ForgotPasswordFormz forgotPasswordEmail;
+// --- Submission Statuses ---
+@override@JsonKey() final  FormzSubmissionStatus loginStatus;
+@override@JsonKey() final  FormzSubmissionStatus registerStatus;
+@override@JsonKey() final  FormzSubmissionStatus forgotPasswordStatus;
+// --- User Data ---
+@override final  User? user;
+@override final  String? userEmail;
+// --- Error Handling ---
+@override final  String? errorMessage;
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$AuthStateImpl &&
-            (identical(other.email, email) || other.email == email) &&
-            (identical(other.password, password) ||
-                other.password == password) &&
-            (identical(other.fullName, fullName) ||
-                other.fullName == fullName) &&
-            (identical(other.phone, phone) || other.phone == phone) &&
-            (identical(other.forgotPasswordEmail, forgotPasswordEmail) ||
-                other.forgotPasswordEmail == forgotPasswordEmail) &&
-            (identical(other.loginStatus, loginStatus) ||
-                other.loginStatus == loginStatus) &&
-            (identical(other.registerStatus, registerStatus) ||
-                other.registerStatus == registerStatus) &&
-            (identical(other.forgotPasswordStatus, forgotPasswordStatus) ||
-                other.forgotPasswordStatus == forgotPasswordStatus) &&
-            (identical(other.user, user) || other.user == user) &&
-            (identical(other.userEmail, userEmail) ||
-                other.userEmail == userEmail) &&
-            (identical(other.errorMessage, errorMessage) ||
-                other.errorMessage == errorMessage));
-  }
+/// Create a copy of AuthState
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$AuthStateCopyWith<_AuthState> get copyWith => __$AuthStateCopyWithImpl<_AuthState>(this, _$identity);
 
-  @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    email,
-    password,
-    fullName,
-    phone,
-    forgotPasswordEmail,
-    loginStatus,
-    registerStatus,
-    forgotPasswordStatus,
-    user,
-    userEmail,
-    errorMessage,
-  );
 
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$AuthStateImplCopyWith<_$AuthStateImpl> get copyWith =>
-      __$$AuthStateImplCopyWithImpl<_$AuthStateImpl>(this, _$identity);
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AuthState&&(identical(other.email, email) || other.email == email)&&(identical(other.password, password) || other.password == password)&&(identical(other.fullName, fullName) || other.fullName == fullName)&&(identical(other.phone, phone) || other.phone == phone)&&(identical(other.forgotPasswordEmail, forgotPasswordEmail) || other.forgotPasswordEmail == forgotPasswordEmail)&&(identical(other.loginStatus, loginStatus) || other.loginStatus == loginStatus)&&(identical(other.registerStatus, registerStatus) || other.registerStatus == registerStatus)&&(identical(other.forgotPasswordStatus, forgotPasswordStatus) || other.forgotPasswordStatus == forgotPasswordStatus)&&(identical(other.user, user) || other.user == user)&&(identical(other.userEmail, userEmail) || other.userEmail == userEmail)&&(identical(other.errorMessage, errorMessage) || other.errorMessage == errorMessage));
 }
 
-abstract class _AuthState extends AuthState {
-  const factory _AuthState({
-    final EmailFormz email,
-    final PasswordFormz password,
-    final FullNameFormz fullName,
-    final PhoneFormz phone,
-    final ForgotPasswordFormz forgotPasswordEmail,
-    final FormzSubmissionStatus loginStatus,
-    final FormzSubmissionStatus registerStatus,
-    final FormzSubmissionStatus forgotPasswordStatus,
-    final User? user,
-    final String? userEmail,
-    final String? errorMessage,
-  }) = _$AuthStateImpl;
-  const _AuthState._() : super._();
 
-  // --- Form Fields ---
-  @override
-  EmailFormz get email;
-  @override
-  PasswordFormz get password;
-  @override
-  FullNameFormz get fullName;
-  @override
-  PhoneFormz get phone;
-  @override
-  ForgotPasswordFormz get forgotPasswordEmail; // --- Submission Statuses ---
-  @override
-  FormzSubmissionStatus get loginStatus;
-  @override
-  FormzSubmissionStatus get registerStatus;
-  @override
-  FormzSubmissionStatus get forgotPasswordStatus; // --- User Data ---
-  @override
-  User? get user;
-  @override
-  String? get userEmail; // --- Error Handling ---
-  @override
-  String? get errorMessage;
+@override
+int get hashCode => Object.hash(runtimeType,email,password,fullName,phone,forgotPasswordEmail,loginStatus,registerStatus,forgotPasswordStatus,user,userEmail,errorMessage);
 
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$AuthStateImplCopyWith<_$AuthStateImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'AuthState(email: $email, password: $password, fullName: $fullName, phone: $phone, forgotPasswordEmail: $forgotPasswordEmail, loginStatus: $loginStatus, registerStatus: $registerStatus, forgotPasswordStatus: $forgotPasswordStatus, user: $user, userEmail: $userEmail, errorMessage: $errorMessage)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$AuthStateCopyWith<$Res> implements $AuthStateCopyWith<$Res> {
+  factory _$AuthStateCopyWith(_AuthState value, $Res Function(_AuthState) _then) = __$AuthStateCopyWithImpl;
+@override @useResult
+$Res call({
+ EmailFormz email, PasswordFormz password, FullNameFormz fullName, PhoneFormz phone, ForgotPasswordFormz forgotPasswordEmail, FormzSubmissionStatus loginStatus, FormzSubmissionStatus registerStatus, FormzSubmissionStatus forgotPasswordStatus, User? user, String? userEmail, String? errorMessage
+});
+
+
+
+
+}
+/// @nodoc
+class __$AuthStateCopyWithImpl<$Res>
+    implements _$AuthStateCopyWith<$Res> {
+  __$AuthStateCopyWithImpl(this._self, this._then);
+
+  final _AuthState _self;
+  final $Res Function(_AuthState) _then;
+
+/// Create a copy of AuthState
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? email = null,Object? password = null,Object? fullName = null,Object? phone = null,Object? forgotPasswordEmail = null,Object? loginStatus = null,Object? registerStatus = null,Object? forgotPasswordStatus = null,Object? user = freezed,Object? userEmail = freezed,Object? errorMessage = freezed,}) {
+  return _then(_AuthState(
+email: null == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
+as EmailFormz,password: null == password ? _self.password : password // ignore: cast_nullable_to_non_nullable
+as PasswordFormz,fullName: null == fullName ? _self.fullName : fullName // ignore: cast_nullable_to_non_nullable
+as FullNameFormz,phone: null == phone ? _self.phone : phone // ignore: cast_nullable_to_non_nullable
+as PhoneFormz,forgotPasswordEmail: null == forgotPasswordEmail ? _self.forgotPasswordEmail : forgotPasswordEmail // ignore: cast_nullable_to_non_nullable
+as ForgotPasswordFormz,loginStatus: null == loginStatus ? _self.loginStatus : loginStatus // ignore: cast_nullable_to_non_nullable
+as FormzSubmissionStatus,registerStatus: null == registerStatus ? _self.registerStatus : registerStatus // ignore: cast_nullable_to_non_nullable
+as FormzSubmissionStatus,forgotPasswordStatus: null == forgotPasswordStatus ? _self.forgotPasswordStatus : forgotPasswordStatus // ignore: cast_nullable_to_non_nullable
+as FormzSubmissionStatus,user: freezed == user ? _self.user : user // ignore: cast_nullable_to_non_nullable
+as User?,userEmail: freezed == userEmail ? _self.userEmail : userEmail // ignore: cast_nullable_to_non_nullable
+as String?,errorMessage: freezed == errorMessage ? _self.errorMessage : errorMessage // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
+// dart format on

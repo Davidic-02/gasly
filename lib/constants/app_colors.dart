@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // Brand Colors
+  static const Color darkSurface = Color(0xFF2C2C2C);
   static const primaryColor = Color(
     0xFFFF6D00,
   ); // The bright orange in "Go to home" / "Deactivate"

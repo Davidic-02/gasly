@@ -1,14 +1,20 @@
-.PHONY: runner clean get analyze test build watch
+.PHONY: runner clean get analyze test build watch fix-runner
 
 runner:
-	dart run build_runner build --delete-conflicting-outputs
+	flutter pub run build_runner build --delete-conflicting-outputs
 
 watch:
-	dart run build_runner watch
+	flutter pub run build_runner watch --delete-conflicting-outputs
+
+# Use this if you get Error 78 again
+fix-runner:
+	rm -rf .dart_tool/build
+	flutter pub get
+	flutter pub run build_runner build --delete-conflicting-outputs
 
 clean:
 	flutter clean
-	
+    
 get:
 	flutter pub get
 
