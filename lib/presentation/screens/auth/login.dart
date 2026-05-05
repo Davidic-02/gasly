@@ -7,7 +7,12 @@ import 'package:formz/formz.dart';
 import 'package:gasly/bloc/auth/auth_bloc.dart';
 import 'package:gasly/constants/app_colors.dart';
 import 'package:gasly/constants/app_spacing.dart';
+import 'package:gasly/presentation/screens/auth/forgot_password._screen.dart';
 import 'package:gasly/presentation/screens/auth/register.dart';
+import 'package:gasly/presentation/screens/tabs/dashboard.dart';
+import 'package:gasly/presentation/widgets/button.dart';
+import 'package:gasly/presentation/widgets/custom_text_form_field.dart';
+import 'package:gasly/presentation/widgets/gasly_logo.dart';
 import 'package:gasly/services/toast_services.dart';
 import 'package:go_router/go_router.dart';
 
@@ -57,7 +62,7 @@ class LoginScreen extends HookWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       // ── Logo ──────────────────────────────
-                      const _GaslyLogo(),
+                      const GaslyLogo(),
                       AppSpacing.verticalSpaceLarge,
 
                       // ── Header ────────────────────────────
@@ -83,7 +88,7 @@ class LoginScreen extends HookWidget {
                       AppSpacing.verticalSpaceLarge,
 
                       // ── Email ─────────────────────────────
-                      GaslyTextField(
+                      CustomTextFormField(
                         focusNode: emailFocusNode,
                         title: 'Email Address',
                         hintText: 'Enter your work email',
@@ -101,7 +106,7 @@ class LoginScreen extends HookWidget {
                       AppSpacing.verticalSpaceMedium,
 
                       // ── Password ──────────────────────────
-                      GaslyTextField(
+                      CustomTextFormField(
                         focusNode: passwordFocusNode,
                         title: 'PASSWORD',
                         hintText: 'Enter Password',
@@ -145,7 +150,7 @@ class LoginScreen extends HookWidget {
                       AppSpacing.verticalSpaceLarge,
 
                       // ── Sign In Button ────────────────────
-                      GaslyButton(
+                      Button(
                         'Sign in',
                         busy:
                             state.loginStatus ==
@@ -205,7 +210,7 @@ class LoginScreen extends HookWidget {
       ToastService.toast('Welcome back!');
       Navigator.pushNamedAndRemoveUntil(
         context,
-        DashboardScreen.routeName,
+        Dashboard.routeName,
         (route) => false,
       );
       return true;
@@ -229,28 +234,5 @@ class LoginScreen extends HookWidget {
     }
 
     return false;
-  }
-}
-
-// ─────────────────────────────────────────────
-// SHARED LOGO WIDGET (used across auth screens)
-// ─────────────────────────────────────────────
-
-class _GaslyLogo extends StatelessWidget {
-  const _GaslyLogo();
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'GASLY',
-        style: TextStyle(
-          color: AppColors.primaryTextColor,
-          fontSize: 28,
-          fontWeight: FontWeight.w900,
-          letterSpacing: 4,
-        ),
-      ),
-    );
   }
 }

@@ -209,7 +209,7 @@ class RegisterScreen extends HookWidget {
     if (previous.registerStatus != current.registerStatus &&
         current.registerStatus.isSuccess) {
       ToastService.toast('Account created successfully!');
-      context.go(Dashboard.routeName); // clears stack ✅
+      context.go(Dashboard.routeName);
       return true;
     }
 
