@@ -1,22 +1,40 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
-part 'customer_model.freezed.dart';
-part 'customer_model.g.dart';
+class CustomerModel {
+  final String id;
+  final String fullName;
+  final String email;
+  final String phone;
+  final String address;
+  final String status; // "active" or "inactive"
+  final int loyaltyPoints;
+  final double totalSpent;
+  final DateTime? createdAt;
 
-@freezed
-abstract class CustomerModel with _$CustomerModel {
-  const factory CustomerModel({
-    required String id,
-    required String fullName,
-    required String email,
-    required String phone,
-    required String address,
-    required String status,
-    required int loyaltyPoints,
-    required double totalSpent,
-    DateTime? createdAt,
-  }) = _CustomerModel;
+  const CustomerModel({
+    required this.id,
+    required this.fullName,
+    required this.email,
+    required this.phone,
+    required this.address,
+    required this.status,
+    required this.loyaltyPoints,
+    required this.totalSpent,
+    this.createdAt,
+  });
 
-  factory CustomerModel.fromJson(Map<String, dynamic> json) =>
-      _$CustomerModelFromJson(json);
+  factory CustomerModel.fromFirestore(DocumentSnapshot doc) {
+    final data = doc.data() as Map<String, dynamic>;
+    return CustomerModel(
+      id: doc.id,
+      fullName: data['fullName'] ?? '',
+      email: data['email'] ?? '',
+      phone: data['phone'] ?? '',
+      address: data['address'] ?? '',
+      status: data['status'] ?? 'active',
+      loyaltyPoints: data['loyaltyPoints'] ?? 0,
+      totalSpent: (data['totalSpent'] ?? 0.0).toDouble(),
+      createdAt: (data['createdAt'] as Timestamp?)?.toDate(),
+    );
+  }
 }

@@ -64,6 +64,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '208209054222',
     projectId: 'gasly-2b7d1',
     storageBucket: 'gasly-2b7d1.firebasestorage.app',
+    iosClientId: '208209054222-mm867tq5fer5vsjg605776jacmsdlted.apps.googleusercontent.com',
     iosBundleId: 'com.example.gasly',
   );
 
@@ -73,6 +74,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '208209054222',
     projectId: 'gasly-2b7d1',
     storageBucket: 'gasly-2b7d1.firebasestorage.app',
+    iosClientId: '208209054222-mm867tq5fer5vsjg605776jacmsdlted.apps.googleusercontent.com',
     iosBundleId: 'com.example.gasly',
   );
 
@@ -85,4 +87,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'gasly-2b7d1.firebasestorage.app',
     measurementId: 'G-NY0VH2V385',
   );
+
 }
