@@ -15,7 +15,7 @@ import 'package:gasly/services/theme_services.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await dotenv.load();
+  //await dotenv.load();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await setupServiceLocator();
   await ThemeService.initializeTheme();
