@@ -1,7 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:email_validator/email_validator.dart';
 import 'package:formz/formz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:gasly/enums/validator_error.dart';
 import 'package:gasly/models/customer_model.dart';
 
 part 'customer_event.dart';
