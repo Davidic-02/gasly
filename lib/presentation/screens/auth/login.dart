@@ -208,11 +208,7 @@ class LoginScreen extends HookWidget {
     if (previous.loginStatus != current.loginStatus &&
         current.loginStatus.isSuccess) {
       ToastService.toast('Welcome back!');
-      Navigator.pushNamedAndRemoveUntil(
-        context,
-        Dashboard.routeName,
-        (route) => false,
-      );
+      context.go(Dashboard.routeName);
       return true;
     }
 

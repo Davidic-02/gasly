@@ -7,27 +7,30 @@ import 'package:gasly/constants/app_spacing.dart';
 // ─────────────────────────────────────────────────────────────────────────────
 
 enum GaslyRoute {
-  dashboard,
-  customerList,
-  addCustomer, // ← new entry
-  virtualCard,
-  cashbackPoints,
-  giftCard,
-  transactions,
-  gasStations,
-  referrals,
-  profileSettings,
+  dashboard('/dashboard'),
+  customerList('/customers'),
+  addCustomer('/add-customer'),
+  virtualCard('/virtual-card'),
+  cashbackPoints('/cashback-points'),
+  giftCard('/gift-card'),
+  transactions('/transactions'),
+  gasStations('/gas-stations'),
+  referrals('/referrals'),
+  profileSettings('/profile-settings');
+
+  final String path;
+  const GaslyRoute(this.path);
 }
 
 class _NavItem {
-  final IconData icon;
+  final String iconPath;
   final String label;
   final GaslyRoute route;
   final bool hasDividerAfter;
   final bool isSubItem; // indented under Customer information
 
   const _NavItem({
-    required this.icon,
+    required this.iconPath,
     required this.label,
     required this.route,
     this.hasDividerAfter = false,
@@ -51,54 +54,54 @@ class GaslySidebar extends StatelessWidget {
 
   static const List<_NavItem> _items = [
     _NavItem(
-      icon: Icons.grid_view_rounded,
+      iconPath: 'assets/icons/home.png',
       label: 'Dashboard',
       route: GaslyRoute.dashboard,
     ),
     _NavItem(
-      icon: Icons.people_alt_outlined,
+      iconPath: 'assets/icons/customer_info.png',
       label: 'Customer information',
       route: GaslyRoute.customerList,
     ),
     _NavItem(
-      icon: Icons.person_add_outlined,
+      iconPath: 'assets/icons/customer_info.png',
       label: 'Add Customer',
       route: GaslyRoute.addCustomer,
       isSubItem: true, // rendered indented under Customer information
     ),
     _NavItem(
-      icon: Icons.credit_card_outlined,
+      iconPath: 'assets/icons/virtual_card.png',
       label: 'Virtual Card',
       route: GaslyRoute.virtualCard,
     ),
     _NavItem(
-      icon: Icons.stars_outlined,
+      iconPath: 'assets/icons/cash_back.png',
       label: 'Cashback Points',
       route: GaslyRoute.cashbackPoints,
     ),
     _NavItem(
-      icon: Icons.card_giftcard_outlined,
+      iconPath: 'assets/icons/gift_card.png',
       label: 'Gift card',
       route: GaslyRoute.giftCard,
     ),
     _NavItem(
-      icon: Icons.swap_horiz_rounded,
+      iconPath: 'assets/icons/transaction.png',
       label: 'Transactions',
       route: GaslyRoute.transactions,
       hasDividerAfter: true,
     ),
     _NavItem(
-      icon: Icons.local_gas_station_outlined,
+      iconPath: 'assets/icons/gas_station.png',
       label: 'Gas Stations',
       route: GaslyRoute.gasStations,
     ),
     _NavItem(
-      icon: Icons.group_add_outlined,
+      iconPath: 'assets/icons/referrals.png',
       label: 'Referrals',
       route: GaslyRoute.referrals,
     ),
     _NavItem(
-      icon: Icons.settings_outlined,
+      iconPath: 'assets/icons/profile_settings.png',
       label: 'Profile settings',
       route: GaslyRoute.profileSettings,
     ),
@@ -117,26 +120,12 @@ class GaslySidebar extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 28, 20, 28),
             child: Row(
               children: [
-                Container(
-                  width: 32,
-                  height: 32,
-                  decoration: BoxDecoration(
-                    color: AppColors.primaryColor,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: const Icon(
-                    Icons.local_gas_station,
-                    color: Colors.white,
-                    size: 18,
-                  ),
-                ),
-                AppSpacing.horizontalSpaceSmall,
                 const Text(
                   'Gasly App',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w400,
                     letterSpacing: -0.3,
                   ),
                 ),
@@ -260,7 +249,14 @@ class _SidebarTile extends StatelessWidget {
             margin: const EdgeInsets.symmetric(vertical: 2),
             padding: EdgeInsets.fromLTRB(leftPad, 10, 12, 10),
             decoration: BoxDecoration(
-              color: isSelected ? AppColors.secondaryBlue : Colors.transparent,
+              color: isSelected
+                  ? AppColors.primaryColor.withValues(alpha: 0.15)
+                  : Colors.transparent,
+              border: isSelected
+                  ? Border.all(
+                      color: AppColors.primaryColor.withValues(alpha: 0.3),
+                    )
+                  : null,
               borderRadius: BorderRadius.circular(8),
             ),
             child: Row(
@@ -269,15 +265,14 @@ class _SidebarTile extends StatelessWidget {
                   Container(
                     width: 1,
                     height: 16,
-                    color: isSelected
-                        ? AppColors.primaryColor
-                        : AppColors.greyTextColor.withValues(alpha: .4),
+                    color: AppColors.greyTextColor.withValues(alpha: .4),
                     margin: const EdgeInsets.only(right: 8),
                   ),
                 ],
-                Icon(
-                  item.icon,
-                  size: item.isSubItem ? 15 : 18,
+                Image.asset(
+                  item.iconPath,
+                  width: item.isSubItem ? 15 : 18,
+                  height: item.isSubItem ? 15 : 18,
                   color: isSelected ? Colors.white : AppColors.greyTextColor,
                 ),
                 AppSpacing.horizontalSpaceSmall,
@@ -296,23 +291,6 @@ class _SidebarTile extends StatelessWidget {
                   ),
                 ),
               ],
-            ),
-          ),
-        ),
-
-        /// ANIMATED LEFT INDICATOR
-        AnimatedPositioned(
-          duration: const Duration(milliseconds: 250),
-          curve: Curves.easeInOut,
-          left: 0,
-          top: 6,
-          bottom: 6,
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 250),
-            width: isSelected ? 4 : 0,
-            decoration: BoxDecoration(
-              color: AppColors.primaryColor,
-              borderRadius: BorderRadius.circular(4),
             ),
           ),
         ),

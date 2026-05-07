@@ -1,7 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:gasly/constants/app_colors.dart';
+import 'package:gasly/constants/app_spacing.dart';
 import 'package:gasly/router/gasly_sidebar.dart';
 import 'package:go_router/go_router.dart';
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TOP BAR CONFIG — each screen declares its own top bar content
+// ─────────────────────────────────────────────────────────────────────────────
+
+class TopBarConfig {
+  final Widget title;
+  final bool showSearch;
+  final bool showNotification;
+  final bool showAvatar;
+
+  const TopBarConfig({
+    required this.title,
+    this.showSearch = true,
+    this.showNotification = true,
+    this.showAvatar = true,
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SHELL LAYOUT
+// ─────────────────────────────────────────────────────────────────────────────
 
 class MainSideBarLayout extends StatelessWidget {
   final Widget child;
@@ -13,99 +36,160 @@ class MainSideBarLayout extends StatelessWidget {
     required this.currentLocation,
   });
 
-  /// Helper: converts route path → sidebar enum
   GaslyRoute _getSelectedRoute(String location) {
-    if (location.contains('/dashboard')) return GaslyRoute.dashboard;
-    if (location.contains('/customers')) return GaslyRoute.customerList;
-    if (location.contains('/add-customer')) return GaslyRoute.addCustomer;
-    if (location.contains('/virtual-card')) return GaslyRoute.virtualCard;
-    if (location.contains('/cashback')) return GaslyRoute.cashbackPoints;
-    if (location.contains('/gift-card')) return GaslyRoute.giftCard;
-    if (location.contains('/transactions')) return GaslyRoute.transactions;
-    if (location.contains('/gas-stations')) return GaslyRoute.gasStations;
-    if (location.contains('/referrals')) return GaslyRoute.referrals;
-    if (location.contains('/profile')) return GaslyRoute.profileSettings;
-
-    return GaslyRoute.dashboard;
+    return GaslyRoute.values.firstWhere(
+      (route) => location.startsWith(route.path),
+      orElse: () => GaslyRoute.dashboard,
+    );
   }
 
-  /// Helper: converts enum → route path
-  String _routeToPath(GaslyRoute route) {
+  TopBarConfig _topBarConfig(GaslyRoute route) {
     switch (route) {
+      // Dashboard has greeting + subtitle
       case GaslyRoute.dashboard:
-        return '/dashboard';
+        return TopBarConfig(
+          title: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Text(
+                'Hello, Micheal!',
+                style: TextStyle(
+                  color: AppColors.primaryTextColor,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              Text(
+                'Here is what is happening today.',
+                style: TextStyle(color: AppColors.greyTextColor, fontSize: 12),
+              ),
+            ],
+          ),
+        );
+
       case GaslyRoute.customerList:
-        return '/customers';
       case GaslyRoute.addCustomer:
-        return '/add-customer';
+        return TopBarConfig(
+          title: const Text(
+            'Customer information',
+            style: TextStyle(
+              color: AppColors.primaryTextColor,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        );
+
       case GaslyRoute.virtualCard:
-        return '/virtual-card';
+        return TopBarConfig(
+          title: const Text(
+            'Virtual Card',
+            style: TextStyle(
+              color: AppColors.primaryTextColor,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        );
+
       case GaslyRoute.cashbackPoints:
-        return '/cashback';
+        return TopBarConfig(
+          title: const Text(
+            'Cashback Points',
+            style: TextStyle(
+              color: AppColors.primaryTextColor,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        );
+
       case GaslyRoute.giftCard:
-        return '/gift-card';
+        return TopBarConfig(
+          title: const Text(
+            'Gift Card',
+            style: TextStyle(
+              color: AppColors.primaryTextColor,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        );
+
       case GaslyRoute.transactions:
-        return '/transactions';
+        return TopBarConfig(
+          title: const Text(
+            'Transactions',
+            style: TextStyle(
+              color: AppColors.primaryTextColor,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        );
+
       case GaslyRoute.gasStations:
-        return '/gas-stations';
+        return TopBarConfig(
+          title: const Text(
+            'Gas Stations',
+            style: TextStyle(
+              color: AppColors.primaryTextColor,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        );
+
       case GaslyRoute.referrals:
-        return '/referrals';
+        return TopBarConfig(
+          title: const Text(
+            'Referrals',
+            style: TextStyle(
+              color: AppColors.primaryTextColor,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        );
+
       case GaslyRoute.profileSettings:
-        return '/profile-settings';
+        return TopBarConfig(
+          title: const Text(
+            'Profile Settings',
+            style: TextStyle(
+              color: AppColors.primaryTextColor,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        );
     }
   }
 
   @override
   Widget build(BuildContext context) {
     final selectedRoute = _getSelectedRoute(currentLocation);
+    final topBar = _topBarConfig(selectedRoute);
 
     return Scaffold(
       backgroundColor: AppColors.lightBg,
       body: Row(
         children: [
-          /// ─────────────────────────────────────────────
-          /// SIDEBAR (LEFT)
-          /// ─────────────────────────────────────────────
+          // ── Sidebar ──────────────────────────────────────────
           GaslySidebar(
             selectedRoute: selectedRoute,
             onRouteTap: (route) {
-              final path = _routeToPath(route);
-
-              /// prevents rebuilding same page
-              if (path != currentLocation) {
-                context.go(path);
-              }
+              if (route.path != currentLocation) context.go(route.path);
             },
           ),
 
-          /// ─────────────────────────────────────────────
-          /// MAIN CONTENT (RIGHT)
-          /// ─────────────────────────────────────────────
+          // ── Right side: top bar + screen ─────────────────────
           Expanded(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                /// optional top spacing/header area
-                Container(
-                  height: 60,
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  alignment: Alignment.centerLeft,
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
-                    border: Border(
-                      bottom: BorderSide(color: AppColors.borderColor),
-                    ),
-                  ),
-                  child: Text(
-                    _getPageTitle(selectedRoute),
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: AppColors.primaryTextColor,
-                    ),
-                  ),
-                ),
-
-                /// actual screen content
+                _TopBar(config: topBar),
                 Expanded(child: child),
               ],
             ),
@@ -114,29 +198,99 @@ class MainSideBarLayout extends StatelessWidget {
       ),
     );
   }
+}
 
-  String _getPageTitle(GaslyRoute route) {
-    switch (route) {
-      case GaslyRoute.dashboard:
-        return "Dashboard";
-      case GaslyRoute.customerList:
-        return "Customers";
-      case GaslyRoute.addCustomer:
-        return "Add Customer";
-      case GaslyRoute.virtualCard:
-        return "Virtual Card";
-      case GaslyRoute.cashbackPoints:
-        return "Cashback Points";
-      case GaslyRoute.giftCard:
-        return "Gift Card";
-      case GaslyRoute.transactions:
-        return "Transactions";
-      case GaslyRoute.gasStations:
-        return "Gas Stations";
-      case GaslyRoute.referrals:
-        return "Referrals";
-      case GaslyRoute.profileSettings:
-        return "Profile Settings";
-    }
+// ─────────────────────────────────────────────────────────────────────────────
+// TOP BAR WIDGET
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _TopBar extends StatelessWidget {
+  final TopBarConfig config;
+  const _TopBar({required this.config});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 64,
+      padding: const EdgeInsets.symmetric(horizontal: 32),
+      decoration: const BoxDecoration(
+        color: AppColors.whiteColor,
+        border: Border(bottom: BorderSide(color: AppColors.borderColor)),
+      ),
+      child: Row(
+        children: [
+          Expanded(child: config.title),
+
+          if (config.showSearch) ...[
+            _SearchBar(),
+            AppSpacing.horizontalSpaceMedium,
+          ],
+
+          if (config.showNotification) ...[
+            _IconBox(icon: Icons.notifications_none_outlined),
+            AppSpacing.horizontalSpaceSmall,
+          ],
+
+          if (config.showAvatar)
+            const CircleAvatar(
+              radius: 18,
+              backgroundColor: AppColors.primaryColor,
+              child: Text(
+                'AE',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _SearchBar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 200,
+      height: 36,
+      decoration: BoxDecoration(
+        color: AppColors.lightBg,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppColors.borderColor),
+      ),
+      child: Row(
+        children: const [
+          SizedBox(width: 10),
+          Icon(Icons.search, size: 15, color: AppColors.greyTextColor),
+          SizedBox(width: 6),
+          Text(
+            'Search here...',
+            style: TextStyle(color: AppColors.greyTextColor, fontSize: 13),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _IconBox extends StatelessWidget {
+  final IconData icon;
+  const _IconBox({required this.icon});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 36,
+      height: 36,
+      decoration: BoxDecoration(
+        color: AppColors.lightBg,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppColors.borderColor),
+      ),
+      child: Icon(icon, size: 18, color: AppColors.greyTextColor),
+    );
   }
 }
